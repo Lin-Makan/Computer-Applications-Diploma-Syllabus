@@ -1,0 +1,2175 @@
+
+ ****** Learn Data Structures & Algorithms : Organizing Data Questions ******
+        ==============================================================
+         
+         *** Data Structures & Algorithms ***
+             ============================
+                1. DSA - Home
+                2. DSA - Overview
+                3. DSA - Environment Setup
+         
+         *** Algorithm ***
+             =========
+               1. DSA - Algorithms Basics
+               2. DSA - Asymptotic Analysis
+               3. DSA - Greedy Algorithms
+               4. DSA - Divide and Conquer
+               5. DSA - Dynamic Programming
+ 
+        *** Data Structures ***
+            ===============
+              1. DSA - Data Structure Basics
+              2. DSA - Array Data Structure
+   
+        *** Linked Lists ***
+            ============
+              1. DSA - Linked List Basics
+              2. DSA - Doubly Linked List
+              3. DSA - Circular Linked List
+      
+        *** Stack & Queue *** 
+            =============
+              1. DSA - Stack
+              2. DSA - Expression Parsing
+              3. DSA - Queue
+         
+       *** Searching Techniques ***
+           ====================
+              1. DSA - Linear Search
+              2. DSA - Binary Search
+              3. DSA - Interpolation Search
+              4. DSA - Hash Table
+        
+       *** Sorting Techniques ***
+           ==================
+              1. DSA - Sorting Algorithms
+              2. DSA - Bubble Sort
+              3. DSA - Insertion Sort
+              4. DSA - Selection Sort
+              5. DSA - Merge Sort
+              6. DSA - Shell Sort
+              7. DSA - Quick Sort
+        
+       *** Graph Data Structure ***
+           ====================
+              1. DSA - Graph Data Structure
+              2. DSA - Depth First Traversal
+              3. DSA - Breadth First Traversal
+        
+       *** Tree Data Structure ***
+           ===================
+              1. DSA - Tree Data Structure
+              2. DSA - Tree Traversal
+              3. DSA - Binary Search Tree
+              4. DSA - AVL Tree
+              5. DSA - Spanning Tree
+              6. DSA - Heap
+ 
+       *** Recursion ***
+           =========
+             1. DSA - Recursion Basics
+             2. DSA - Tower of Hanoi
+             3. DSA - Fibonacci Series  
+
+_______________________________________________________________________________
+
+         *** Data Structures & Algorithms ***
+             ============================
+                1. DSA - Home
+                2. DSA - Overview
+                3. DSA - Environment Setup
+
+       <<<<<<<<< *** Data Structures & Algorithms *** >>>>>>>>>
+                     ============================
+__________________________________________________
+                                                  |
+      Data Structures & Algorithms                |                  
+__________________________________________________|
+            |
+            |
+1) What's the Heading ?
+-----------------------
+* Data Structures & Algorithms
+                                                                                        
+2) Definition of Data Structures & Algorithms ?
+-----------------------------------------------
+*
+ 
+3) What is Data Structures & Algorithms About ?
+-----------------------------------------------
+*
+*
+
+4) What does Data Structures & Algorithms Do ?
+----------------------------------------------
+*
+*
+
+5) Advantages/Benefits of Data Structures & Algorithms :
+--------------------------------------------------------
+*
+*
+*
+
+6) Disadvantages/Drawback of Data Structures & Algorithms :
+-----------------------------------------------------------
+*
+*
+*  
+
+7) Examples of Data Structures & Algorithms :
+---------------------------------------------
+*
+*
+_______________________________________________________________________________
+
+ 1. <<<<<<<<< DSA - Home >>>>>>>>>
+__________________________________________________
+                                                  |
+         DSA - Home                               |                  
+__________________________________________________|
+            |
+            |
+1) What's the Heading ?
+-----------------------
+* DSA - Home
+                                                                                        
+2) Definition of DSA - Home ?
+-----------------------------
+*
+ 
+3) What is DSA - Home About ?
+-----------------------------
+*
+*
+
+4) What does DSA - Home Do ?
+----------------------------
+*
+*
+
+5) Advantages/Benefits of DSA - Home :
+--------------------------------------
+*
+*
+*
+
+6) Disadvantages/Drawback of DSA - Home :
+-----------------------------------------
+*
+*
+*  
+
+7) Examples of DSA - Home :
+---------------------------
+*
+*
+_______________________________________________________________________________
+
+ 2. <<<<<<<<< DSA - Overview >>>>>>>>>
+__________________________________________________
+                                                  |
+         DSA - Overview                           |                  
+__________________________________________________|
+            |
+            |
+1) What's the Heading ?
+-----------------------
+* DSA - Overview
+                                                                                        
+2) Definition of DSA - Overview ?
+---------------------------------
+*
+ 
+3) What is DSA - Overview About ?
+---------------------------------
+*
+*
+
+4) What does DSA - Overview Do ?
+--------------------------------
+*
+*
+
+5) Advantages/Benefits of DSA - Overview :
+------------------------------------------
+*
+*
+*
+
+6) Disadvantages/Drawback of DSA - Overview :
+---------------------------------------------
+*
+*
+*  
+
+7) Examples of DSA - Overview :
+-------------------------------
+*
+*
+_______________________________________________________________________________
+
+ 3. <<<<<<<<< DSA - Environment Setup >>>>>>>>>
+__________________________________________________
+                                                  |
+       DSA - Environment Setup                    |                  
+__________________________________________________|
+            |
+            |
+1) What's the Heading ?
+-----------------------
+* DSA - Environment Setup
+                                                                                        
+2) Definition of DSA - Environment Setup ?
+------------------------------------------
+*
+ 
+3) What is DSA - Environment Setup About ?
+------------------------------------------
+*
+*
+
+4) What does DSA - Environment Setup Do ?
+-----------------------------------------
+*
+*
+
+5) Advantages/Benefits of DSA - Environment Setup :
+---------------------------------------------------
+*
+*
+*
+
+6) Disadvantages/Drawback of DSA - Environment Setup :
+------------------------------------------------------
+*
+*
+*  
+
+7) Examples of DSA - Environment Setup :
+----------------------------------------
+*
+*
+_______________________________________________________________________________
+         
+         *** Algorithm ***
+             =========
+               1. DSA - Algorithms Basics
+               2. DSA - Asymptotic Analysis
+               3. DSA - Greedy Algorithms
+               4. DSA - Divide and Conquer
+               5. DSA - Dynamic Programming
+
+      <<<<<<<<< *** Algorithm *** >>>>>>>>>
+                    =========
+__________________________________________________
+                                                  |
+      Algorithm                                   |                  
+__________________________________________________|
+            |
+            |
+1) What's the Heading ?
+-----------------------
+* Algorithm
+                                                                                        
+2) Definition of Algorithm ?
+----------------------------
+*
+ 
+3) What is Algorithm About ?
+----------------------------
+*
+*
+
+4) What does Algorithm Do ?
+---------------------------
+*
+*
+
+5) Advantages/Benefits of Algorithm :
+-------------------------------------
+*
+*
+*
+
+6) Disadvantages/Drawback of Algorithm :
+----------------------------------------
+*
+*
+*  
+
+7) Examples of Algorithm :
+--------------------------
+*
+*
+_______________________________________________________________________________
+
+ 1. <<<<<<<<< DSA - Algorithms Basics >>>>>>>>>
+__________________________________________________
+                                                  |
+       DSA - Algorithms Basics                    |                  
+__________________________________________________|
+            |
+            |
+1) What's the Heading ?
+-----------------------
+* DSA - Algorithms Basics
+                                                                                        
+2) Definition of DSA - Algorithms Basics ?
+------------------------------------------
+*
+ 
+3) What is DSA - Algorithms Basics About ?
+------------------------------------------
+*
+*
+
+4) What does DSA - Algorithms Basics Do ?
+-----------------------------------------
+*
+*
+
+5) Advantages/Benefits of DSA - Algorithms Basics :
+---------------------------------------------------
+*
+*
+*
+
+6) Disadvantages/Drawback of DSA - Algorithms Basics :
+------------------------------------------------------
+*
+*
+*  
+
+7) Examples of DSA - Algorithms Basics :
+----------------------------------------
+*
+*
+_______________________________________________________________________________
+
+ 2. <<<<<<<<< DSA - Asymptotic Analysis >>>>>>>>>
+__________________________________________________
+                                                  |
+        DSA - Asymptotic Analysis                 |                  
+__________________________________________________|
+            |
+            |
+1) What's the Heading ?
+-----------------------
+* DSA - Asymptotic Analysis
+                                                                                        
+2) Definition of Asymptotic Analysis ?
+--------------------------------------
+*
+ 
+3) What is Asymptotic Analysis About ?
+--------------------------------------
+*
+*
+
+4) What does Asymptotic Analysis Do ?
+-------------------------------------
+*
+*
+
+5) Advantages/Benefits of Asymptotic Analysis :
+-----------------------------------------------
+*
+*
+*
+
+6) Disadvantages/Drawback of Asymptotic Analysis :
+--------------------------------------------------
+*
+*
+*  
+
+7) Examples of Asymptotic Analysis :
+------------------------------------
+*
+*
+_______________________________________________________________________________
+
+ 3. <<<<<<<<< DSA - Greedy Algorithms >>>>>>>>>
+__________________________________________________
+                                                  |
+      DSA - Greedy Algorithms                     |                  
+__________________________________________________|
+            |
+            |
+1) What's the Heading ?
+-----------------------
+* DSA - Greedy Algorithms
+                                                                                        
+2) Definition of Greedy Algorithms ?
+------------------------------------
+*
+ 
+3) What is Greedy Algorithms About ?
+------------------------------------
+*
+*
+
+4) What does Greedy Algorithms Do ?
+-----------------------------------
+*
+*
+
+5) Advantages/Benefits of Greedy Algorithms :
+---------------------------------------------
+*
+*
+*
+
+6) Disadvantages/Drawback of Greedy Algorithms :
+------------------------------------------------
+*
+*
+*  
+
+7) Examples of Greedy Algorithms :
+----------------------------------
+*
+*
+_______________________________________________________________________________
+
+ 4. <<<<<<<<< DSA - Divide and Conquer >>>>>>>>>
+__________________________________________________
+                                                  |
+       DSA - Divide and Conquer                   |                  
+__________________________________________________|
+            |
+            |
+1) What's the Heading ?
+-----------------------
+* DSA - Divide and Conquer
+                                                                                        
+2) Definition of Divide and Conquer ?
+-------------------------------------
+*
+ 
+3) What is Divide and Conquer About ?
+-------------------------------------
+*
+*
+
+4) What does Divide and Conquer Do ?
+------------------------------------
+*
+*
+
+5) Advantages/Benefits of Divide and Conquer :
+----------------------------------------------
+*
+*
+*
+
+6) Disadvantages/Drawback of Divide and Conquer :
+-------------------------------------------------
+*
+*
+*  
+
+7) Examples of Divide and Conquer :
+-----------------------------------
+*
+*
+________________________________________________________________________________
+
+ 5. <<<<<<<<< DSA - Dynamic Programming >>>>>>>>>
+__________________________________________________
+     DSA - Dynamic Programming                    |
+                                                  |                  
+__________________________________________________|
+            |
+            |
+1) What's the Heading ?
+-----------------------
+* DSA - Dynamic Programming
+                                                                                        
+2) Definition of Dynamic Programming ?
+--------------------------------------
+*
+ 
+3) What is Dynamic Programming About ?
+--------------------------------------
+*
+*
+
+4) What does Dynamic Programming Do ?
+-------------------------------------
+* 
+*
+
+5) Advantages/Benefits of Dynamic Programming :
+-----------------------------------------------
+*
+*
+*
+
+6) Disadvantages/Drawback of Dynamic Programming :
+--------------------------------------------------
+*
+*
+*  
+
+7) Examples of Dynamic Programming :
+------------------------------------
+*
+*
+_______________________________________________________________________________
+ 
+        *** Data Structures ***
+            ===============
+              1. DSA - Data Structure Basics
+              2. DSA - Array Data Structure
+
+      <<<<<<<<< *** Data Structures *** >>>>>>>>>
+                    ===============
+__________________________________________________
+                                                  |
+    Data Structures                               |                  
+__________________________________________________|
+            |
+            |
+1) What's the Heading ?
+-----------------------
+* Data Structures
+                                                                                        
+2) Definition of Data Structures ?
+----------------------------------
+*
+ 
+3) What is Data Structures About ?
+----------------------------------
+*
+*
+
+4) What does Data Structures Do ?
+---------------------------------
+*
+*
+
+5) Advantages/Benefits of Data Structures :
+-------------------------------------------
+*
+*
+*
+
+6) Disadvantages/Drawback of Data Structures :
+----------------------------------------------
+*
+*
+*  
+
+7) Examples of Data Structures :
+--------------------------------
+*
+*
+_______________________________________________________________________________
+
+ 1. <<<<<<<<< DSA - Data Structure Basics >>>>>>>>>
+__________________________________________________
+                                                  |
+     DSA - Data Structure Basics                  |                  
+__________________________________________________|
+            |
+            |
+1) What's the Heading ?
+-----------------------
+* DSA - Data Structure Basics
+                                                                                        
+2) Definition of Data Structure Basics ?
+----------------------------------------
+*
+ 
+3) What is Data Structure Basics About ?
+----------------------------------------
+*
+*
+
+4) What does Data Structure Basics Do ?
+---------------------------------------
+*
+*
+
+5) Advantages/Benefits of Data Structure Basics :
+-------------------------------------------------
+*
+*
+*
+
+6) Disadvantages/Drawback of Data Structure Basics :
+----------------------------------------------------
+*
+*
+*  
+
+7) Examples of Data Structure Basics :
+--------------------------------------
+*
+*
+_______________________________________________________________________________
+
+ 2. <<<<<<<<< DSA - Array Data Structure >>>>>>>>>
+__________________________________________________
+                                                  |
+      DSA - Array Data Structure                  |                  
+__________________________________________________|
+            |
+            |
+1) What's the Heading ?
+-----------------------
+* DSA - Array Data Structure
+                                                                                        
+2) Definition of DSA - Array Data Structure ?
+---------------------------------------------
+*
+ 
+3) What is DSA - Array Data Structure About ?
+---------------------------------------------
+*
+*
+
+4) What does DSA - Array Data Structure Do ?
+--------------------------------------------
+*
+*
+
+5) Advantages/Benefits of DSA - Array Data Structure :
+------------------------------------------------------
+*
+*
+*
+
+6) Disadvantages/Drawback of DSA - Array Data Structure :
+---------------------------------------------------------
+*
+*
+*  
+
+7) Examples of DSA - Array Data Structure :
+-------------------------------------------
+*
+*
+_______________________________________________________________________________
+   
+        *** Linked Lists ***
+            ============
+              1. DSA - Linked List Basics
+              2. DSA - Doubly Linked List
+              3. DSA - Circular Linked List
+
+      <<<<<<<<< *** Linked Lists *** >>>>>>>>>
+                    ============
+__________________________________________________
+                                                  |
+      Linked Lists                                |                  
+__________________________________________________|
+            |
+            |
+1) What's the Heading ?
+-----------------------
+* Linked Lists
+                                                                                        
+2) Definition of Linked Lists ?
+-------------------------------
+*
+ 
+3) What is Linked Lists About ?
+-------------------------------
+*
+*
+
+4) What does Linked Lists Do ?
+------------------------------
+*
+*
+
+5) Advantages/Benefits of Linked Lists :
+----------------------------------------
+*
+*
+*
+
+6) Disadvantages/Drawback of Linked Lists :
+-------------------------------------------
+*
+*
+*  
+
+7) Examples of Linked Lists :
+-----------------------------
+*
+*
+_______________________________________________________________________________
+
+ 1. <<<<<<<<< DSA - Linked List Basics >>>>>>>>>
+__________________________________________________
+                                                  |
+      DSA - Linked List Basics                    |                  
+__________________________________________________|
+            |
+            |
+1) What's the Heading ?
+-----------------------
+* DSA - Linked List Basics
+                                                                                        
+2) Definition of Linked List Basics ?
+-------------------------------------
+*
+ 
+3) What is Linked List Basics About ?
+-------------------------------------
+*
+*
+
+4) What does Linked List Basics Do ?
+------------------------------------
+*
+*
+
+5) Advantages/Benefits of Linked List Basics :
+----------------------------------------------
+*
+*
+*
+
+6) Disadvantages/Drawback of Linked List Basics :
+-------------------------------------------------
+*
+*
+*  
+
+7) Examples of Linked List Basics :
+-----------------------------------
+*
+*
+_______________________________________________________________________________
+
+ 2. <<<<<<<<< DSA - Doubly Linked List >>>>>>>>>
+__________________________________________________
+                                                  |
+      DSA - Doubly Linked List                    |                  
+__________________________________________________|
+            |
+            |
+1) What's the Heading ?
+-----------------------
+* DSA - Doubly Linked List
+                                                                                        
+2) Definition of Doubly Linked List ?
+-------------------------------------
+*
+ 
+3) What is Doubly Linked List About ?
+-------------------------------------
+*
+*
+
+4) What does Doubly Linked List Do ?
+------------------------------------
+*
+*
+
+5) Advantages/Benefits of Doubly Linked List :
+----------------------------------------------
+*
+*
+*
+
+6) Disadvantages/Drawback of Doubly Linked List :
+-------------------------------------------------
+*
+*
+*  
+
+7) Examples of Doubly Linked List :
+-----------------------------------
+*
+*
+_______________________________________________________________________________
+
+ 3. <<<<<<<<< DSA - Circular Linked List >>>>>>>>>
+__________________________________________________
+                                                  |
+     DSA - Circular Linked List                   |                  
+__________________________________________________|
+            |
+            |
+1) What's the Heading ?
+-----------------------
+* DSA - Circular Linked List
+                                                                                        
+2) Definition of Circular Linked List ?
+---------------------------------------
+*
+ 
+3) What is Circular Linked List About ?
+---------------------------------------
+*
+*
+
+4) What does Circular Linked List Do ?
+--------------------------------------
+*
+*
+
+5) Advantages/Benefits of Circular Linked List :
+------------------------------------------------
+*
+*
+*
+
+6) Disadvantages/Drawback of Circular Linked List :
+---------------------------------------------------
+*
+*
+*  
+
+7) Examples of Circular Linked List :
+-------------------------------------
+*
+*
+_______________________________________________________________________________
+      
+        *** Stack & Queue *** 
+            =============
+              1. DSA - Stack
+              2. DSA - Expression Parsing
+              3. DSA - Queue
+
+      <<<<<<<<< *** Stack & Queue *** >>>>>>>>>
+                    =============
+__________________________________________________
+                                                  |
+      Stack & Queue                               |                  
+__________________________________________________|
+            |
+            |
+1) What's the Heading ?
+-----------------------
+* Stack & Queue
+                                                                                        
+2) Definition of Stack & Queue ?
+--------------------------------
+*
+ 
+3) What is Stack & Queue About ?
+--------------------------------
+*
+*
+
+4) What does Stack & Queue Do ?
+-------------------------------
+*
+*
+
+5) Advantages/Benefits of Stack & Queue :
+-----------------------------------------
+*
+*
+*
+
+6) Disadvantages/Drawback of Stack & Queue :
+--------------------------------------------
+*
+*
+*  
+
+7) Examples of Stack & Queue :
+------------------------------
+*
+*
+_______________________________________________________________________________
+
+ 1. <<<<<<<<< DSA - Stack >>>>>>>>>
+__________________________________________________
+                                                  |
+      DSA - Stack                                 |                  
+__________________________________________________|
+            |
+            |
+1) What's the Heading ?
+-----------------------
+* DSA - Stack
+                                                                                        
+2) Definition of Stack ?
+------------------------
+*
+ 
+3) What is Stack About ?
+------------------------
+*
+*
+
+4) What does Stack Do ?
+-----------------------
+*
+*
+
+5) Advantages/Benefits of Stack :
+---------------------------------
+*
+*
+*
+
+6) Disadvantages/Drawback of Stack :
+------------------------------------
+*
+*
+*  
+
+7) Examples of Stack :
+----------------------
+*
+*
+_______________________________________________________________________________
+
+ 2. <<<<<<<<< DSA - Expression Parsing >>>>>>>>>
+__________________________________________________
+                                                  |
+      DSA - Expression Parsing                    |                  
+__________________________________________________|
+            |
+            |
+1) What's the Heading ?
+-----------------------
+* DSA - Expression Parsing
+                                                                                        
+2) Definition of Expression Parsing ?
+-------------------------------------
+*
+ 
+3) What is Expression Parsing About ?
+-------------------------------------
+*
+*
+
+4) What does Expression Parsing Do ?
+------------------------------------
+*
+*
+
+5) Advantages/Benefits of Expression Parsing :
+----------------------------------------------
+*
+*
+*
+
+6) Disadvantages/Drawback of Expression Parsing :
+-------------------------------------------------
+*
+*
+*  
+
+7) Examples of Expression Parsing :
+-----------------------------------
+*
+*
+_______________________________________________________________________________
+
+ 3. <<<<<<<<< DSA - Queue >>>>>>>>>
+__________________________________________________
+                                                  |
+     DSA - Queue                                  |                  
+__________________________________________________|
+            |
+            |
+1) What's the Heading ?
+-----------------------
+* DSA - Queue
+                                                                                        
+2) Definition of Queue ?
+------------------------
+*
+ 
+3) What is Queue About ?
+------------------------
+*
+*
+
+4) What does Queue Do ?
+-----------------------
+*
+*
+
+5) Advantages/Benefits of Queue :
+---------------------------------
+*
+*
+*
+
+6) Disadvantages/Drawback of Queue :
+------------------------------------
+*
+*
+*  
+
+7) Examples of Queue :
+----------------------
+*
+*
+_______________________________________________________________________________
+         
+       *** Searching Techniques ***
+           ====================
+              1. DSA - Linear Search
+              2. DSA - Binary Search
+              3. DSA - Interpolation Search
+              4. DSA - Hash Table
+
+       <<<<<<<<< *** Searching Techniques *** >>>>>>>>>
+                     ====================
+__________________________________________________
+                                                  |
+            Searching Techniques                  |                  
+__________________________________________________|
+            |
+            |
+1) What's the Heading ?
+-----------------------
+* Searching Techniques
+                                                                                        
+2) Definition of Searching Techniques ?
+---------------------------------------
+*
+ 
+3) What is Searching Techniques About ?
+---------------------------------------
+*
+*
+
+4) What does Searching Techniques Do ?
+--------------------------------------
+*
+*
+
+5) Advantages/Benefits of Searching Techniques :
+------------------------------------------------
+*
+*
+*
+
+6) Disadvantages/Drawback of Searching Techniques :
+---------------------------------------------------
+*
+*
+*  
+
+7) Examples of Searching Techniques :
+-------------------------------------
+*
+*
+_______________________________________________________________________________
+
+ 1. <<<<<<<<< DSA - Linear Search >>>>>>>>>
+__________________________________________________
+                                                  |
+         DSA - Linear Search                      |                  
+__________________________________________________|
+            |
+            |
+1) What's the Heading ?
+-----------------------
+* DSA - Linear Search
+                                                                                        
+2) Definition of Linear Search ?
+--------------------------------
+*
+ 
+3) What is Linear Search About ?
+--------------------------------
+*
+*
+
+4) What does Linear Search Do ?
+-------------------------------
+*
+*
+
+5) Advantages/Benefits of Linear Search :
+-----------------------------------------
+*
+*
+*
+
+6) Disadvantages/Drawback of Linear Search :
+--------------------------------------------
+*
+*
+*  
+
+7) Examples of Linear Search :
+------------------------------
+*
+*
+_______________________________________________________________________________
+
+ 2. <<<<<<<<< DSA - Binary Search >>>>>>>>>
+__________________________________________________
+                                                  |
+        DSA - Binary Search                       |                  
+__________________________________________________|
+            |
+            |
+1) What's the Heading ?
+-----------------------
+* DSA - Binary Search
+                                                                                        
+2) Definition of Binary Search ?
+--------------------------------
+*
+ 
+3) What is Binary Search About ?
+--------------------------------
+*
+*
+
+4) What does Binary Search Do ?
+-------------------------------
+*
+*
+
+5) Advantages/Benefits of Binary Search :
+-----------------------------------------
+*
+*
+*
+
+6) Disadvantages/Drawback of Binary Search :
+--------------------------------------------
+*
+*
+*  
+
+7) Examples of Binary Search :
+------------------------------
+*
+*
+_______________________________________________________________________________
+
+ 3. <<<<<<<<< DSA - Interpolation Search >>>>>>>>>
+__________________________________________________
+                                                  |
+        DSA - Interpolation Search                |                  
+__________________________________________________|
+            |
+            |
+1) What's the Heading ?
+-----------------------
+* DSA - Interpolation Search
+                                                                                        
+2) Definition of Interpolation Search ?
+---------------------------------------
+*
+ 
+3) What is Interpolation Search About ?
+---------------------------------------
+*
+*
+
+4) What does Interpolation Search Do ?
+--------------------------------------
+*
+*
+
+5) Advantages/Benefits of Interpolation Search :
+------------------------------------------------
+*
+*
+*
+
+6) Disadvantages/Drawback of Interpolation Search :
+---------------------------------------------------
+*
+*
+*  
+
+7) Examples of Interpolation Search :
+-------------------------------------
+*
+*
+_______________________________________________________________________________
+
+ 4. <<<<<<<<< DSA - Hash Table >>>>>>>>>
+__________________________________________________
+                                                  |
+       DSA - Hash Table                           |                  
+__________________________________________________|
+            |
+            |
+1) What's the Heading ?
+-----------------------
+* DSA - Hash Table
+                                                                                        
+2) Definition of Hash Table ?
+-----------------------------
+*
+ 
+3) What is Hash Table About ?
+-----------------------------
+*
+*
+
+4) What does Hash Table Do ?
+----------------------------
+*
+*
+
+5) Advantages/Benefits of Hash Table :
+--------------------------------------
+*
+*
+*
+
+6) Disadvantages/Drawback of Hash Table :
+-----------------------------------------
+*
+*
+*  
+
+7) Examples of Hash Table :
+---------------------------
+*
+*
+_______________________________________________________________________________
+        
+       *** Sorting Techniques ***
+           ==================
+              1. DSA - Sorting Algorithms
+              2. DSA - Bubble Sort
+              3. DSA - Insertion Sort
+              4. DSA - Selection Sort
+              5. DSA - Merge Sort
+              6. DSA - Shell Sort
+              7. DSA - Quick Sort
+
+     <<<<<<<<< *** Sorting Techniques *** >>>>>>>>>
+                   ==================
+__________________________________________________
+                                                  |
+       Sorting Techniques                         |                  
+__________________________________________________|
+            |
+            |
+1) What's the Heading ?
+-----------------------
+* Sorting Techniques
+                                                                                        
+2) Definition of Sorting Techniques ?
+-------------------------------------
+*
+ 
+3) What is Sorting Techniques About ?
+-------------------------------------
+*
+*
+
+4) What does Sorting Techniques Do ?
+------------------------------------
+*
+*
+
+5) Advantages/Benefits of Sorting Techniques :
+----------------------------------------------
+*
+*
+*
+
+6) Disadvantages/Drawback of Sorting Techniques :
+-------------------------------------------------
+*
+*
+*  
+
+7) Examples of Sorting Techniques :
+-----------------------------------
+*
+*
+_______________________________________________________________________________
+
+ 1. <<<<<<<<< DSA - Sorting Algorithms >>>>>>>>>
+__________________________________________________
+                                                  |
+       DSA - Sorting Algorithms                   |                  
+__________________________________________________|
+            |
+            |
+1) What's the Heading ?
+-----------------------
+* DSA - Sorting Algorithms
+                                                                                        
+2) Definition of Sorting Algorithms ?
+-------------------------------------
+*
+ 
+3) What is Sorting Algorithms About ?
+-------------------------------------
+*
+*
+
+4) What does Sorting Algorithms Do ?
+------------------------------------
+*
+*
+
+5) Advantages/Benefits of Sorting Algorithms :
+----------------------------------------------
+*
+*
+*
+
+6) Disadvantages/Drawback of Sorting Algorithms :
+-------------------------------------------------
+*
+*
+*  
+
+7) Examples of Sorting Algorithms :
+-----------------------------------
+*
+*
+_______________________________________________________________________________
+
+ 2. <<<<<<<<< DSA - Bubble Sort >>>>>>>>>
+__________________________________________________
+                                                  |
+      DSA - Bubble Sort                           |                  
+__________________________________________________|
+            |
+            |
+1) What's the Heading ?
+-----------------------
+* DSA - Bubble Sort
+                                                                                        
+2) Definition of Bubble Sort ?
+------------------------------
+*
+ 
+3) What is Bubble Sort About ?
+------------------------------
+*
+*
+
+4) What does Bubble Sort Do ?
+-----------------------------
+*
+*
+
+5) Advantages/Benefits of Bubble Sort :
+---------------------------------------
+*
+*
+*
+
+6) Disadvantages/Drawback of Bubble Sort :
+------------------------------------------
+*
+*
+*  
+
+7) Examples of Bubble Sort :
+----------------------------
+*
+*
+_______________________________________________________________________________
+
+ 3. <<<<<<<<< DSA - Insertion Sort >>>>>>>>>
+__________________________________________________
+                                                  |
+       DSA - Insertion Sort                       |                  
+__________________________________________________|
+            |
+            |
+1) What's the Heading ?
+-----------------------
+* DSA - Insertion Sort
+                                                                                        
+2) Definition of Insertion Sort ?
+---------------------------------
+*
+ 
+3) What is Insertion Sort About ?
+---------------------------------
+*
+*
+
+4) What does Insertion Sort Do ?
+--------------------------------
+*
+*
+
+5) Advantages/Benefits of Insertion Sort :
+------------------------------------------
+*
+*
+*
+
+6) Disadvantages/Drawback of Insertion Sort :
+---------------------------------------------
+*
+*
+*  
+
+7) Examples of Insertion Sort :
+-------------------------------
+*
+*
+_______________________________________________________________________________
+
+ 4. <<<<<<<<< DSA - Selection Sort >>>>>>>>>
+__________________________________________________
+                                                  |
+        DSA - Selection Sort                      |                  
+__________________________________________________|
+            |
+            |
+1) What's the Heading ?
+-----------------------
+* DSA - Selection Sort
+                                                                                        
+2) Definition of Selection Sort ?
+---------------------------------
+*
+ 
+3) What is Selection Sort About ?
+---------------------------------
+*
+*
+
+4) What does Selection Sort Do ?
+--------------------------------
+*
+*
+
+5) Advantages/Benefits of Selection Sort :
+------------------------------------------
+*
+*
+*
+
+6) Disadvantages/Drawback of Selection Sort :
+---------------------------------------------
+*
+*
+*  
+
+7) Examples of Selection Sort :
+-------------------------------
+*
+*
+________________________________________________________________________________
+
+ 5. <<<<<<<<< DSA - Merge Sort >>>>>>>>>
+__________________________________________________
+                                                  |
+         DSA - Merge Sort                         |                  
+__________________________________________________|
+            |
+            |
+1) What's the Heading ?
+-----------------------
+* DSA - Merge Sort
+                                                                                        
+2) Definition of Merge Sort ?
+-----------------------------
+*
+ 
+3) What is Merge Sort About ?
+-----------------------------
+*
+*
+
+4) What does Merge Sort Do ?
+----------------------------
+*
+*
+
+5) Advantages/Benefits of Merge Sort :
+--------------------------------------
+*
+*
+*
+
+6) Disadvantages/Drawback of Merge Sort :
+-----------------------------------------
+*
+*
+*  
+
+7) Examples of Merge Sort :
+---------------------------
+*
+*
+_______________________________________________________________________________
+
+ 6. <<<<<<<<< DSA - Shell Sort >>>>>>>>>
+__________________________________________________
+                                                  |
+       DSA - Shell Sort                           |                  
+__________________________________________________|
+            |
+            |
+1) What's the Heading ?
+-----------------------
+* DSA - Shell Sort
+                                                                                        
+2) Definition of Shell Sort ?
+-----------------------------
+*
+ 
+3) What is Shell Sort About ?
+-----------------------------
+*
+*
+
+4) What does Shell Sort Do ?
+----------------------------
+*
+*
+
+5) Advantages/Benefits of Shell Sort :
+--------------------------------------
+*
+*
+*
+
+6) Disadvantages/Drawback of Shell Sort :
+-----------------------------------------
+*
+*
+*  
+
+7) Examples of Shell Sort :
+---------------------------
+*
+*
+_______________________________________________________________________________
+
+ 7. <<<<<<<<< DSA - Quick Sort >>>>>>>>>
+__________________________________________________
+                                                  |
+        DSA - Quick Sort                          |                  
+__________________________________________________|
+            |
+            |
+1) What's the Heading ?
+-----------------------
+* DSA - Quick Sort
+                                                                                        
+2) Definition of Quick Sort ?
+-----------------------------
+*
+ 
+3) What is Quick Sort About ?
+-----------------------------
+*
+*
+
+4) What does Quick Sort Do ?
+----------------------------
+*
+*
+
+5) Advantages/Benefits of Quick Sort :
+--------------------------------------
+*
+*
+*
+
+6) Disadvantages/Drawback of Quick Sort :
+-----------------------------------------
+*
+*
+*  
+
+7) Examples of Quick Sort :
+---------------------------
+*
+*
+_______________________________________________________________________________
+        
+       *** Graph Data Structure ***
+           ====================
+              1. DSA - Graph Data Structure
+              2. DSA - Depth First Traversal
+              3. DSA - Breadth First Traversal
+
+ 1. <<<<<<<<< *** DSA -  Graph Data Structure *** >>>>>>>>>
+                  ===========================
+__________________________________________________
+                                                  |
+      DSA - Graph Data Structure                  |                  
+__________________________________________________|
+            |
+            |
+1) What's the Heading ?
+-----------------------
+* Graph Data Structure
+                                                                                        
+2) Definition of Graph Data Structure ?
+---------------------------------------
+*
+ 
+3) What is Graph Data Structure About ?
+---------------------------------------
+*
+*
+
+4) What does Graph Data Structure Do ?
+--------------------------------------
+*
+*
+
+5) Advantages/Benefits of Graph Data Structure :
+------------------------------------------------
+*
+*
+*
+
+6) Disadvantages/Drawback of Graph Data Structure :
+---------------------------------------------------
+*
+*
+*  
+
+7) Examples of Graph Data Structure :
+-------------------------------------
+*
+*
+_______________________________________________________________________________
+
+ 2. <<<<<<<<< DSA - Depth First Traversal >>>>>>>>>
+__________________________________________________
+                                                  |
+    DSA - Depth First Traversal                   |                  
+__________________________________________________|
+            |
+            |
+1) What's the Heading ?
+-----------------------
+* DSA - Depth First Traversal
+                                                                                        
+2) Definition of DSA - Depth First Traversal ?
+----------------------------------------------
+*
+ 
+3) What is DSA - Depth First Traversal About ?
+----------------------------------------------
+*
+*
+
+4) What does DSA - Depth First Traversal Do ?
+---------------------------------------------
+*
+*
+
+5) Advantages/Benefits of DSA - Depth First Traversal :
+-------------------------------------------------------
+*
+*
+*
+
+6) Disadvantages/Drawback of DSA - Depth First Traversal :
+----------------------------------------------------------
+*
+*
+*  
+
+7) Examples of DSA - Depth First Traversal :
+--------------------------------------------
+*
+*
+_______________________________________________________________________________
+
+ 3. <<<<<<<<< DSA - Breadth First Traversal >>>>>>>>>
+__________________________________________________
+                                                  |
+      DSA - Breadth First Traversal               |                  
+__________________________________________________|
+            |
+            |
+1) What's the Heading ?
+-----------------------
+* DSA - Breadth First Traversal
+                                                                                        
+2) Definition of Breadth First Traversal ?
+------------------------------------------
+*
+ 
+3) What is Breadth First Traversal About ?
+------------------------------------------
+*
+*
+
+4) What does Breadth First Traversal Do ?
+-----------------------------------------
+*
+*
+
+5) Advantages/Benefits of Breadth First Traversal :
+---------------------------------------------------
+*
+*
+*
+
+6) Disadvantages/Drawback of Breadth First Traversal :
+------------------------------------------------------
+*
+*
+*  
+
+7) Examples of Breadth First Traversal :
+----------------------------------------
+*
+*
+_______________________________________________________________________________
+
+        
+       *** Tree Data Structure ***
+           ===================
+              1. DSA - Tree Data Structure
+              2. DSA - Tree Traversal
+              3. DSA - Binary Search Tree
+              4. DSA - AVL Tree
+              5. DSA - Spanning Tree
+              6. DSA - Heap
+
+ 1. <<<<<<<<< *** DSA - Tree Data Structure *** >>>>>>>>>
+                  =========================
+__________________________________________________
+                                                  |
+      DSA - Tree Data Structure                   |                  
+__________________________________________________|
+            |
+            |
+1) What's the Heading ?
+-----------------------
+* DSA - Tree Data Structure
+                                                                                        
+2) Definition of Tree Data Structure ?
+--------------------------------------
+*
+ 
+3) What is Tree Data Structure About ?
+--------------------------------------
+*
+*
+
+4) What does Tree Data Structure Do ?
+-------------------------------------
+*
+*
+
+5) Advantages/Benefits of Tree Data Structure :
+-----------------------------------------------
+*
+*
+*
+
+6) Disadvantages/Drawback of Tree Data Structure :
+--------------------------------------------------
+*
+*
+*  
+
+7) Examples of Tree Data Structure :
+------------------------------------
+*
+*
+_______________________________________________________________________________
+
+ 2. <<<<<<<<< DSA - Tree Traversal >>>>>>>>>
+__________________________________________________
+                                                  |
+       DSA - Tree Traversal                       |                  
+__________________________________________________|
+            |
+            |
+1) What's the Heading ?
+-----------------------
+* DSA - Tree Traversal
+                                                                                        
+2) Definition of Tree Traversal ?
+---------------------------------
+*
+ 
+3) What is Tree Traversal About ?
+---------------------------------
+*
+*
+
+4) What does Tree Traversal Do ?
+--------------------------------
+*
+*
+
+5) Advantages/Benefits of Tree Traversal :
+------------------------------------------
+*
+*
+*
+
+6) Disadvantages/Drawback of Tree Traversal :
+---------------------------------------------
+*
+*
+*  
+
+7) Examples of Tree Traversal :
+-------------------------------
+*
+*
+_______________________________________________________________________________
+
+ 3. <<<<<<<<< DSA - Binary Search Tree >>>>>>>>>
+__________________________________________________
+                                                  |
+       DSA - Binary Search Tree                   |                  
+__________________________________________________|
+            |
+            |
+1) What's the Heading ?
+-----------------------
+* DSA - Binary Search Tree
+                                                                                        
+2) Definition of Binary Search Tree ?
+-------------------------------------
+*
+ 
+3) What is Binary Search Tree About ?
+-------------------------------------
+*
+*
+
+4) What does Binary Search Tree Do ?
+------------------------------------
+*
+*
+
+5) Advantages/Benefits of Binary Search Tree :
+----------------------------------------------
+*
+*
+*
+
+6) Disadvantages/Drawback of Binary Search Tree :
+-------------------------------------------------
+*
+*
+*  
+
+7) Examples of Binary Search Tree :
+-----------------------------------
+*
+*
+_______________________________________________________________________________
+
+ 4. <<<<<<<<< DSA - AVL Tree >>>>>>>>>
+__________________________________________________
+                                                  |
+        DSA - AVL Tree                            |                  
+__________________________________________________|
+            |
+            |
+1) What's the Heading ?
+-----------------------
+* DSA - AVL Tree
+                                                                                        
+2) Definition of AVL Tree ?
+---------------------------
+*
+ 
+3) What is AVL Tree About ?
+---------------------------
+*
+*
+
+4) What does AVL Tree Do ?
+--------------------------
+*
+*
+
+5) Advantages/Benefits of AVL Tree :
+------------------------------------
+*
+*
+*
+
+6) Disadvantages/Drawback of AVL Tree :
+---------------------------------------
+*
+*
+*  
+
+7) Examples of AVL Tree :
+-------------------------
+*
+*
+_______________________________________________________________________________
+
+ 5. <<<<<<<<< DSA - Spanning Tree >>>>>>>>>
+__________________________________________________
+                                                  |
+        DSA - Spanning Tree                       |                  
+__________________________________________________|
+            |
+            |
+1) What's the Heading ?
+-----------------------
+* DSA - Spanning Tree
+                                                                                        
+2) Definition of Spanning Tree ?
+--------------------------------
+*
+ 
+3) What is Spanning Tree About ?
+--------------------------------
+*
+*
+
+4) What does Spanning Tree Do ?
+-------------------------------
+*
+*
+
+5) Advantages/Benefits of Spanning Tree :
+-----------------------------------------
+*
+*
+*
+
+6) Disadvantages/Drawback of Spanning Tree :
+--------------------------------------------
+*
+*
+*  
+
+7) Examples of Spanning Tree :
+------------------------------
+*
+*
+_______________________________________________________________________________
+
+ 6. <<<<<<<<< DSA - Heap >>>>>>>>>
+__________________________________________________
+                                                  |
+        DSA - Heap                                |                  
+__________________________________________________|
+            |
+            |
+1) What's the Heading ?
+-----------------------
+* DSA - Heap
+                                                                                        
+2) Definition of Heap ?
+-----------------------
+*
+ 
+3) What is Heap About ?
+-----------------------
+*
+*
+
+4) What does Heap Do ?
+----------------------
+*
+*
+
+5) Advantages/Benefits of Heap :
+--------------------------------
+*
+*
+*
+
+6) Disadvantages/Drawback of Heap :
+-----------------------------------
+*
+*
+*  
+
+7) Examples of Heap :
+---------------------
+*
+*
+_______________________________________________________________________________
+ 
+       *** Recursion ***
+           =========
+             1. DSA - Recursion Basics
+             2. DSA - Tower of Hanoi
+             3. DSA - Fibonacci Series
+  
+         <<<<<<<<< *** Recursion *** >>>>>>>>>
+                       =========
+__________________________________________________
+                                                  |
+              Recursion                           |                  
+__________________________________________________|
+            |
+            |
+1) What's the Heading ?
+-----------------------
+* Recursion
+                                                                                        
+2) Definition of Recursion ?
+----------------------------
+*
+ 
+3) What is Recursion About ?
+----------------------------
+*
+*
+
+4) What does Recursion Do ?
+---------------------------
+*
+*
+
+5) Advantages/Benefits of Recursion :
+-------------------------------------
+*
+*
+*
+
+6) Disadvantages/Drawback of Recursion :
+----------------------------------------
+*
+*
+*  
+
+7) Examples of Recursion :
+--------------------------
+*
+*
+_______________________________________________________________________________
+
+ 1. <<<<<<<<< DSA - Recursion Basics >>>>>>>>>
+__________________________________________________
+                                                  |
+        DSA - Recursion Basics                    |                  
+__________________________________________________|
+            |
+            |
+1) What's the Heading ?
+-----------------------
+* DSA - Recursion Basics
+                                                                                        
+2) Definition of Recursion Basics ?
+-----------------------------------
+*
+ 
+3) What is Recursion Basics About ?
+-----------------------------------
+*
+*
+
+4) What does Recursion Basics Do ?
+----------------------------------
+*
+*
+
+5) Advantages/Benefits of Recursion Basics :
+--------------------------------------------
+*
+*
+*
+
+6) Disadvantages/Drawback of Recursion Basics :
+-----------------------------------------------
+*
+*
+*  
+
+7) Examples of Recursion Basics :
+---------------------------------
+*
+*
+_______________________________________________________________________________
+
+ 2. <<<<<<<<< DSA - Tower of Hanoi >>>>>>>>>
+__________________________________________________
+                                                  |
+        DSA - Tower of Hanoi                      |                  
+__________________________________________________|
+            |
+            |
+1) What's the Heading ?
+-----------------------
+* DSA - Tower of Hanoi
+                                                                                        
+2) Definition of Tower of Hanoi ?
+---------------------------------
+*
+ 
+3) What is Tower of Hanoi About ?
+---------------------------------
+*
+*
+
+4) What does Tower of Hanoi Do ?
+--------------------------------
+*
+*
+
+5) Advantages/Benefits of Tower of Hanoi :
+------------------------------------------
+*
+*
+*
+
+6) Disadvantages/Drawback of Tower of Hanoi :
+---------------------------------------------
+*
+*
+*  
+
+7) Examples of Tower of Hanoi :
+-------------------------------
+*
+*
+_______________________________________________________________________________
+
+ 3. <<<<<<<<< DSA - Fibonacci Series >>>>>>>>>
+__________________________________________________
+                                                  |
+         DSA - Fibonacci Series                   |                  
+__________________________________________________|
+            |
+            |
+1) What's the Heading ?
+-----------------------
+* DSA - Fibonacci Series
+                                                                                        
+2) Definition of Fibonacci Series ?
+-----------------------------------
+*
+ 
+3) What is Fibonacci Series About ?
+-----------------------------------
+*
+*
+
+4) What does Fibonacci Series Do ?
+----------------------------------
+*
+*
+
+5) Advantages/Benefits of Fibonacci Series :
+--------------------------------------------
+*
+*
+*
+
+6) Disadvantages/Drawback of Fibonacci Series :
+-----------------------------------------------
+*
+*
+*  
+
+7) Examples of Fibonacci Series :
+---------------------------------
+*
+*
+_______________________________________________________________________________

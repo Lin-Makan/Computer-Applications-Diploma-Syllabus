@@ -1,0 +1,72 @@
+
+     ***** Learn Data Structures & Algorithms : Organizing Data Syllabus *****
+           =============================================================
+         
+         *** Data Structures & Algorithms ***
+             ============================
+                1. DSA - Home
+                2. DSA - Overview
+                3. DSA - Environment Setup
+         
+         *** Algorithm ***
+             =========
+               1. DSA - Algorithms Basics
+               2. DSA - Asymptotic Analysis
+               3. DSA - Greedy Algorithms
+               4. DSA - Divide and Conquer
+               5. DSA - Dynamic Programming
+ 
+        *** Data Structures ***
+            ===============
+              1. DSA - Data Structure Basics
+              2. DSA - Array Data Structure
+   
+        *** Linked Lists ***
+            ============
+              1. DSA - Linked List Basics
+              2. DSA - Doubly Linked List
+              3. DSA - Circular Linked List
+      
+        *** Stack & Queue *** 
+            =============
+              1. DSA - Stack
+              2. DSA - Expression Parsing
+              3. DSA - Queue
+         
+       *** Searching Techniques ***
+           ====================
+              1. DSA - Linear Search
+              2. DSA - Binary Search
+              3. DSA - Interpolation Search
+              4. DSA - Hash Table
+        
+       *** Sorting Techniques ***
+           ==================
+              1. DSA - Sorting Algorithms
+              2. DSA - Bubble Sort
+              3. DSA - Insertion Sort
+              4. DSA - Selection Sort
+              5. DSA - Merge Sort
+              6. DSA - Shell Sort
+              7. DSA - Quick Sort
+        
+       *** Graph Data Structure ***
+           ====================
+              1. DSA - Graph Data Structure
+              2. DSA - Depth First Traversal
+              3. DSA - Breadth First Traversal
+        
+       *** Tree Data Structure ***
+           ===================
+              1. DSA - Tree Data Structure
+              2. DSA - Tree Traversal
+              3. DSA - Binary Search Tree
+              4. DSA - AVL Tree
+              5. DSA - Spanning Tree
+              6. DSA - Heap
+ 
+       *** Recursion ***
+           =========
+             1. DSA - Recursion Basics
+             2. DSA - Tower of Hanoi
+             3. DSA - Fibonacci Series
