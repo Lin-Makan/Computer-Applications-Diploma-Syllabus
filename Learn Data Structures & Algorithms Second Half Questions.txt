@@ -1,0 +1,3432 @@
+       *** Graph Data Structure ***
+           ====================
+              1. DSA - Graph Data Structure
+              2. DSA - Depth First Traversal
+              3. DSA - Breadth First Traversal
+
+ 1. <<<<<<<<< *** DSA -  Graph Data Structure *** >>>>>>>>>
+                  ===========================
+  
+** A graph is a pictorial representation of a set of objects where some pairs
+   of objects are connected by links.
+ * The interconnected objects are represented by points termed as "vertices",
+   and the links that connect the vertices are called "edges".     ````````
+                                  ````````             ````` 
+ * Formally, a graph is a pair of sets "(V, E)", where "V" is the set of 
+   vertices and "E" is the set of edges, connecting the pairs of vertices. 
+ *  Take a look at the following graph −
+             
+                a           b
+                 o_________o
+                 |         |
+                 |         |
+                 |         |
+                 |_________|________ 
+                 o         o        o
+                c           d        e  
+     
+       In the above graph, 
+
+         *  V = {a, b, c, d, e}  
+         *  E = {ab, ac, bd, cd, de}  
+     
+      ** Graph Data Structure :
+         ====================
+    * Mathematical graphs can be represented in data structure.
+    * We can represent a graph using an array of vertices and a 
+      two-dimensional array of edges.
+    
+        important terms −
+      
+      1) Vertex − 
+         '''''''''
+         * Each node of the graph is represented as a vertex.
+         * In the following example, the labeled circle represents
+           vertices.
+         * Thus, A to G are vertices.
+         * We can represent them using an array as shown in the following
+           image. 
+         * Here A can be identified by index 0.
+         * B can be identified using index 1 and so on.
+      
+
+      2) Edge − 
+         '''''''
+         * Edge represents a path between two vertices or a line between
+           two vertices.
+         * In the following example, the lines from A to B, B to C,
+           and so on represents edges.
+         * We can use a two-dimensional array to represent an array as
+           shown in the following image.
+         * Here AB can be represented as 1 at row 0, column 1,
+           BC as 1 at row 1, column 2 and so on, keeping other combinations
+           as 0.
+
+      3) Adjacency − 
+         '''''''''''''
+         * Two node or vertices are adjacent if they are connected to
+           each other through an edge.
+         * In the following example, B is adjacent to A, C is adjacent to B,
+           and so on. 
+
+      4) Path −
+         '''''''
+         * Path represents a sequence of edges between the two vertices.
+         * In the following example, ABCD represents a path from A to D.
+               _____
+              (     ) 
+           0 (   A   )
+             (_______)\
+            /      |   \
+           /       |    \
+          /        |     \
+         /         |      \
+        /          |       \
+      _/_         _|_       \___
+     (   )       (   )      (   )
+  1 (  B  )   4 (  E  )  5 (  F  )
+     (___)       (___)      (___)
+       |                      | 
+       |                      |  
+       |                      |
+       |                      |
+       |                      |
+       |                      | 
+       |                      |
+      _|_                    _|_
+     (   )                  (   ) 
+  2 (  C  )              6 (  G  )
+     (___)                  (___)
+         \ 
+          \
+           \
+            \
+             \  
+              \
+              _\_
+             (   )
+          3 (  D  )
+             (___)
+  
+   ** Basic Operations :
+      ================
+      - Following are basic primary operations of a Graph −
+        
+      * Add Vertex − Adds a vertex to the graph.
+        '''''''''''
+     *  Add Edge − Adds an edge between the two vertices of the graph.
+        '''''''''
+    *   Display Vertex − Displays a vertex of the graph.
+        ''''''''''''''' 
+      
+    * To know more about Graph, please read Graph Theory Tutorial -
+                                            ````````````````````` 
+    * We shall learn about traversing a graph in the coming chapters.
+                           ``````````````````       
+__________________________________________________
+                                                  |
+      DSA - Graph Data Structure                  |                  
+__________________________________________________|
+            |
+            |
+1) What's the Heading ?
+-----------------------
+* Graph Data Structure
+                                                                                        
+2) Definition of Graph Data Structure ?
+---------------------------------------
+*
+ 
+3) What is Graph Data Structure About ?
+---------------------------------------
+*
+*
+
+4) What does Graph Data Structure Do ?
+--------------------------------------
+*
+*
+
+5) Advantages/Benefits of Graph Data Structure :
+------------------------------------------------
+*
+*
+*
+
+6) Disadvantages/Drawback of Graph Data Structure :
+---------------------------------------------------
+*
+*
+*  
+
+7) Examples of Graph Data Structure :
+-------------------------------------
+*
+*
+_______________________________________________________________________________
+
+ 2. <<<<<<<<< DSA - Depth First Traversal >>>>>>>>>
+  
+    * Depth First Search (DFS) algorithm traverses a graph in a depthward 
+      motion and uses a stack to remember to get the next vertex to start
+      search, when a dead end occurs in any iteration.
+                  
+                      
+                      _____
+                  __ (     ) 
+                 /  (   S   )
+                (   (_______)\
+               /   /      |   \
+            1 (   /       |    \
+              |  /        |     \
+              | /         |      \
+              V/          |       \
+             _/_         _|_       \___
+            (   )       (   )      (   )
+           (  A  )     (  B  )    (  C  )<_ 
+            (___)      ^(___)      (___)   \
+           (  |       /   |          |      \
+          (   |      /    |          |       )
+         (    |   5 (     |          |        ) 7
+        (     |     \     |          |       /
+     2 (      |      \    |          |      /
+       (      |       \   |          |     /
+        (     |        \  |          |    /
+         (   _|_        \_|_        _|_  /
+          V (   )       (   )      (   )/ 
+           (  D  )     (  E  )    (  F  )
+            (___)       (___)      (___)
+              | \        ^|       /  | 
+              |  \      / |      /   |
+              |   \    /  |     /    /
+              |    \ 4(   |    /    /
+            3 (     \  (  |   /    ) 6
+               (     \  \ |  /    / 
+                (     \ _\|_/    /
+                 \___> (    )_ _)
+                      (  G   )
+                       (____)
+   
+  * As in the example given above, DFS algorithm traverses from S to A to D
+    to G to E to B first, then to F and lastly to C. 
+  * It employs the following rules -
+        
+     1) Rule 1 -
+        '''''''''
+        * Visit the adjacent unvisited vertex.
+        * Mark it as visited.
+        * Display it.
+        * Push it in a stack.
+
+     2) Rule 2 -
+        '''''''''
+        * If no adjacent vertex is found, pop up a vertex from the
+          stack.
+        * (It will pop up all the vertices from the stack, which do
+          not have adjacent vertices.)
+
+     3) Rule 3 -
+        '''''''''
+        * Repeat Rule 1 and Rule 2 until the stack is empty.
+ 
+  _____________________________________________________________________________
+ | Step |           Traversal                         |     Description        |
+ |``````|`````````````````````````````````````````````|````````````````````````|
+ |______|_____________________________________________|________________________|
+ | 1    |             _____                           |
+ |      |            (  S  )                          |
+ |      |            (_____)                          |
+ |      |           /   |   \                         |
+ |      |          /    |    \                        |
+ |      |         /     |     \          |         |  | 
+ |      |        /      |      \         |         |  |
+ |      |     __/_     _|__     \____    |         |  |
+ |      |    (  A )   (  B )    (  C )   |         |  | Initialize the stack.
+ |      |    (____)   (____)    (____)   |         |  |
+ |      |       \       |        /       |         |  |
+ |      |        \      |       /        |         |  | 
+ |      |         \     |      /         |         |  |
+ |      |          \    |     /          |         |  |
+ |      |           \   |    /           |         |  |
+ |      |            \  |   /            |         |  |
+ |      |             \_|__/             |         |  | 
+ |      |             (  D )             \_________/  |
+ |      |             (____)                Stack     |
+ |______|_____________________________________________|________________________
+ | 2    |             _____                           |
+ |      |            (//S//)                          | Mark "S" as visited and 
+ |      |            (_____)                          | put it onto the stack.
+ |      |           /   |   \                         | Explore any unvisited 
+ |      |          /    |    \                        | adjacent node from "S". 
+ |      |         /     |     \          |         |  | We have three nodes and
+ |      |        /      |      \         |         |  | we can pick any of them.
+ |      |     __/_     _|__     \____    |         |  | For this example, we 
+ |      |    (  A )   (  B )    (  C )   |         |  | shall take the node in 
+ |      |    (____)   (____)    (____)   |         |  | an alphabetical order.
+ |      |       \       |        /       |         |  |
+ |      |        \      |       /        |         |  | 
+ |      |         \     |      /         |         |  |
+ |      |          \    |     /          |         |  |
+ |      |           \   |    /           |  _____  |  |
+ |      |            \  |   /      top==>| |//S//| |  |
+ |      |             \_|__/             | |_____| |  | 
+ |      |             (  D )             \_________/  |
+ |      |             (____)                Stack     |
+ |______|_____________________________________________|________________________
+ | 3    |             _____                           |
+ |      |            (//S//)                          | Mark "A" as visited and 
+ |      |            (_____)                          | put it onto the stack.
+ |      |           /   |   \                         | Explore any unvisited 
+ |      |          /    |    \                        | adjacent node A.from 
+ |      |         /     |     \          |         |  | Both "S" and "D" are 
+ |      |        /      |      \         |         |  | adjacent to "A" but we 
+ |      |     __/_     _|__     \____    |         |  | are concerned for 
+ |      |    (//A/)   (  B )    (  C )   |         |  | unvisited nodes only. 
+ |      |    (____)   (____)    (____)   |         |  | 
+ |      |       \       |        /       |         |  |
+ |      |        \      |       /        |  _____  |  | 
+ |      |         \     |      /   top==>| |//A//| |  |
+ |      |          \    |     /          | |_____| |  |
+ |      |           \   |    /           |  _____  |  |
+ |      |            \  |   /            | |//S//| |  |
+ |      |             \_|__/             | |_____| |  | 
+ |      |             (  D )             \_________/  |
+ |      |             (____)                Stack     |
+ |______|_____________________________________________|________________________
+ | 4    |             _____                           |
+ |      |            (//S//)                          |
+ |      |            (_____)                          |
+ |      |           /   |   \                         |
+ |      |          /    |    \                        | Visit "D" and mark it as
+ |      |         /     |     \          |         |  | visited and put onto 
+ |      |        /      |      \         |         |  | the stack.
+ |      |     __/_     _|__     \____    |         |  | Here, we have "B" and 
+ |      |    (//A/)   (  B )    (  C )   |  _____  |  | "C" nodes, which are 
+ |      |    (____)   (____)    (____)   | |//D//| |  | adjacent to D and both
+ |      |       \       |        / top==>| |_____| |  | are unvisited.
+ |      |        \      |       /        |  _____  |  | However, we shall again
+ |      |         \     |      /         | |//A//| |  | choose in an alphabetical 
+ |      |          \    |     /          | |_____| |  | order.
+ |      |           \   |    /           |  _____  |  |
+ |      |            \  |   /            | |//S//| |  |
+ |      |             \_|__/             | |_____| |  | 
+ |      |             (//D/)             \_________/  |
+ |      |             (____)                Stack     |
+ |______|_____________________________________________|________________________
+ | 5    |             _____                           |
+ |      |            (//S//)                          | We choose "B", mark it   
+ |      |            (_____)                          | as visited and put onto
+ |      |           /   |   \                         | the stack. 
+ |      |          /    |    \                        | Here "B" does not have 
+ |      |         /     |     \          |  _____  |  | any unvisited adjacent 
+ |      |        /      |      \   top==>| |//B//| |  | node. 
+ |      |     __/_     _|__     \____    | |_____| |  | So, we pop "B" from the
+ |      |    (//A/)   (//B/)    (  C )   |  _____  |  | stack. 
+ |      |    (____)   (____)    (____)   | |//D//| |  | 
+ |      |       \       |        /       | |_____| |  |
+ |      |        \      |       /        |  _____  |  | 
+ |      |         \     |      /         | |//A//| |  |
+ |      |          \    |     /          | |_____| |  |
+ |      |           \   |    /           |  _____  |  |
+ |      |            \  |   /            | |//S//| |  |
+ |      |             \_|__/             | |_____| |  | 
+ |      |             (//D/)             \_________/  |
+ |      |             (____)                Stack     |
+ |______|_____________________________________________|________________________
+ | 6    |             _____                           |
+ |      |            (//S//)                          |  
+ |      |            (_____)                          | 
+ |      |           /   |   \                         |  
+ |      |          /    |    \                        |  
+ |      |         /     |     \          |         |  | We check the stack top 
+ |      |        /      |      \         |         |  | for return to the
+ |      |     __/_     _|__     \____    |         |  | previous node and check
+ |      |    (//A/)   (//B/)    (  C )   |  _____  |  | if it has any unvisited 
+ |      |    (____)   (____)    (____)   | |//D//| |  | nodes. 
+ |      |       \       |        / top==>| |_____| |  | Here, we find "D" to be
+ |      |        \      |       /        |  _____  |  | on the top of the stack.
+ |      |         \     |      /         | |//A//| |  |
+ |      |          \    |     /          | |_____| |  |
+ |      |           \   |    /           |  _____  |  |
+ |      |            \  |   /            | |//S//| |  |
+ |      |             \_|__/             | |_____| |  | 
+ |      |             (//D/)             \_________/  |
+ |      |             (____)                Stack     |
+ |______|_____________________________________________|________________________
+ | 7    |             _____                           |
+ |      |            (//S//)                          |  
+ |      |            (_____)                          | 
+ |      |           /   |   \                         |  
+ |      |          /    |    \                        | Only unvisited adjacent  
+ |      |         /     |     \          |  _____  |  | node is from "D" is "C"  
+ |      |        /      |      \         | |//C//| |  | now.
+ |      |     __/_     _|__     \____    | |_____| |  | So we visit "C", mark it
+ |      |    (//A/)   (//B/)    (//C/)   |  _____  |  | as visited and put it  
+ |      |    (____)   (____)    (____)   | |//D//| |  | onto the stack.  
+ |      |       \       |        /       | |_____| |  | 
+ |      |        \      |       /        |  _____  |  | 
+ |      |         \     |      /         | |//A//| |  |
+ |      |          \    |     /          | |_____| |  |
+ |      |           \   |    /           |  _____  |  |
+ |      |            \  |   /            | |//S//| |  |
+ |      |             \_|__/             | |_____| |  | 
+ |      |             (//D/)             \_________/  |
+ |      |             (____)                Stack     |
+ |______|_____________________________________________|_______________________
+       
+   * As C does not have any unvisited adjacent node so we keep popping the
+     stack until we find a node that has an unvisited adjacent node.
+   * In this case, there's none and we keep popping until the stack is empty.
+        
+      About the implementation of this algorithm in C programming language -
+                `````````````````````````````````````````````````````````````
+               Depth First Traversal in C -
+               `````````````````````````````
+   + We shall not see the implementation of Depth First Traversal 
+     (or Depth First Search) in C Programming language.
+   + For our reference purpose, we shall follow our example and take
+     this as our graph model −
+            
+                      _____                           
+                     (  S  )                          
+                     (_____)                          
+                    /   |   \                         
+                   /    |    \                        
+                  /     |     \          |         |   
+                 /      |      \         |         |  
+              __/_     _|__     \____    |         |  
+             (  A )   (  B )    (  C )   |         |  
+             (____)   (____)    (____)   |         |  
+                \       |        /       |         |  
+                 \      |       /        |         |   
+                  \     |      /         |         |  
+                   \    |     /          |         |  
+                    \   |    /           |         |  
+                     \  |   /            |         |  
+                      \_|__/             |         |   
+                      (  D )             \_________/  
+                      (____)                Stack 
+    
+ 
+     * Implementation in C -
+       ``````````````````````
+    ____________________________________________________________________
+   |  #include <stdio.h>
+   |  #include <stdlib.h>
+   |  #include <stdbool.h>
+   |
+   |  #define MAX 5
+   |
+   |  struct Vertex {
+   |     char label;
+   |     bool visited;
+   |  };
+   |
+   |  //stack variables
+   |
+   |  int stack[MAX]; 
+   |  int top = -1; 
+   |
+   |  //graph variables
+   |
+   |  //array of vertices
+   |  struct Vertex* lstVertices[MAX];
+   |
+   |  //adjacency matrix
+   |  int adjMatrix[MAX][MAX];
+   |
+   |  //vertex count
+   |  int vertexCount = 0;
+   |
+   |  //stack functions
+   |
+   |  void push(int item) { 
+   |     stack[++top] = item; 
+   |  } 
+   |
+   |  int pop() { 
+   |     return stack[top--]; 
+   |  } 
+   |
+   |  int peek() {
+   |     return stack[top];
+   |  }
+   | 
+   |  bool isStackEmpty() {
+   |     return top == -1;
+   |  }
+   |
+   |  //graph functions
+   |
+   |  //add vertex to the vertex list
+   |  void addVertex(char label) {
+   |     struct Vertex* vertex = (struct Vertex*) malloc(sizeof(struct Vertex));
+   |     vertex->label = label;  
+   |     vertex->visited = false;     
+   |     lstVertices[vertexCount++] = vertex;
+   |  }
+   |
+   |  //add edge to edge array
+   |  void addEdge(int start,int end) {
+   |     adjMatrix[start][end] = 1;
+   |     adjMatrix[end][start] = 1;
+   |  }
+   |
+   |  //display the vertex
+   |  void displayVertex(int vertexIndex) {
+   |     printf("%c ",lstVertices[vertexIndex]->label);
+   |  }       
+   | 
+   |  //get the adjacent unvisited vertex
+   |  int getAdjUnvisitedVertex(int vertexIndex) {
+   |     int i;
+   |
+   |     for(i = 0; i < vertexCount; i++) {
+   |        if(adjMatrix[vertexIndex][i] == 1 && lstVertices[i]->visited == false) {
+   |           return i;
+   |        }
+   |     }
+   |
+   |     return -1;
+   |  }
+   |
+   |  void depthFirstSearch() {
+   |     int i;
+   |
+   |     //mark first node as visited
+   |     lstVertices[0]->visited = true;
+   |
+   |     //display the vertex
+   |     displayVertex(0);   
+   |
+   |     //push vertex index in stack
+   |     push(0);
+   |
+   |     while(!isStackEmpty()) {
+   |        //get the unvisited vertex of vertex which is at top of the stack
+   |        int unvisitedVertex = getAdjUnvisitedVertex(peek());
+   |
+   |        //no adjacent vertex found
+   |        if(unvisitedVertex == -1) {
+   |           pop();
+   |        } else {
+   |           lstVertices[unvisitedVertex]->visited = true;
+   |           displayVertex(unvisitedVertex);
+   |           push(unvisitedVertex);
+   |        }
+   |     }
+   |
+   |     //stack is empty, search is complete, reset the visited flag        
+   |     for(i = 0;i < vertexCount;i++) {
+   |        lstVertices[i]->visited = false;
+   |     }        
+   |  }
+   |
+   |  int main() {
+   |     int i, j;
+   |
+   |     for(i = 0; i < MAX; i++)    // set adjacency {
+   |        for(j = 0; j < MAX; j++) // matrix to 0
+   |           adjMatrix[i][j] = 0;
+   |     }
+   |
+   |     addVertex('S');   // 0
+   |     addVertex('A');   // 1
+   |     addVertex('B');   // 2
+   |     addVertex('C');   // 3
+   |     addVertex('D');   // 4
+   |
+   |     addEdge(0, 1);    // S - A
+   |     addEdge(0, 2);    // S - B
+   |     addEdge(0, 3);    // S - C
+   |     addEdge(1, 4);    // A - D
+   |     addEdge(2, 4);    // B - D
+   |     addEdge(3, 4);    // C - D
+   |
+   |     printf("Depth First Search: ")
+   |     depthFirstSearch(); 
+   |
+   |     return 0;   
+   |  }
+   |________________________________________________________________________
+        
+  * compile and run the above program, it will produce the following result −
+               
+               Output - 
+     ___________________________________
+    |  Depth First Search: S A D B C    |
+    |___________________________________|
+__________________________________________________
+                                                  |
+    DSA - Depth First Traversal                   |                  
+__________________________________________________|
+            |
+            |
+1) What's the Heading ?
+-----------------------
+* DSA - Depth First Traversal
+                                                                                        
+2) Definition of DSA - Depth First Traversal ?
+----------------------------------------------
+*
+ 
+3) What is DSA - Depth First Traversal About ?
+----------------------------------------------
+*
+*
+
+4) What does DSA - Depth First Traversal Do ?
+---------------------------------------------
+*
+*
+
+5) Advantages/Benefits of DSA - Depth First Traversal :
+-------------------------------------------------------
+*
+*
+*
+
+6) Disadvantages/Drawback of DSA - Depth First Traversal :
+----------------------------------------------------------
+*
+*
+*  
+
+7) Examples of DSA - Depth First Traversal :
+--------------------------------------------
+*
+*
+_______________________________________________________________________________
+
+ 3. <<<<<<<<< DSA - Breadth First Traversal >>>>>>>>>
+    
+    * Breadth First Search (BFS) algorithm traverses a graph in a 
+      breadthward motion and uses a queue to remember to get the 
+      next vertex to start a search, when a dead end occurs in any
+      iteration.
+       
+                      _____
+                 ___ (     ) 
+                /   (   S   )````)
+               (    (_______)\    )
+              /    /   |  |   \    )
+             (    /   (   |    \    )
+            (    /   (    |     \    )
+          1 (   / 2 (     |      \    ) 3
+             ( /     (    |       \   /
+             V/_      (  _|_       \_V_
+            (   )      >(   )      (   )
+           (  A  )     (  B  )    (  C  )<_ 
+            (___)      ^(___)      (___)   \
+           (  |       /   |          |      \
+          (   |      /    |          |       )
+         (    |   5 (     |          |        ) 6
+        (     |     \     |          |       /
+     4 (      |      \    |          |      /
+       (      |       \   |          |     /
+        (     |        \  |          |    /
+         (   _|_        V_|_        _|_  /
+          V (   )       (   )      (   )/ 
+           (  D  )     (  E  )    (  F  )
+            (___)       (___)      (___)
+              | \         |       /    
+              |  \        |      /    
+              |   \       |     /    
+              |    \      |    /     
+            7 (     \     |   /    
+              (      \    |  /     
+               (      \ __|_/    
+                (      (    )
+                 ````>(  G   )
+                       (____)
+    
+   * As in the example given above, BFS algorithm traverses from A to B
+     to E to F first then to C and G lastly to D. 
+   * It employs the following rules :
+      
+      + Rule 1 -
+        '''''''''
+        * Visit the adjacent unvisited vertex.
+        * Mark it as visited.
+        * Display it.
+        * Insert it in a queue.
+
+      + Rule 2 -
+        '''''''''
+        * If no adjacent vertex is found, remove the first vertex from
+          the queue.
+
+      + Rule 3 -
+        '''''''''
+        * Repeat Rule 1 and Rule 2 until the queue is empty.
+      
+  _____________________________________________________________________________
+ | Step |           Traversal                         |     Description        |
+ |``````|`````````````````````````````````````````````|````````````````````````|
+ |______|_____________________________________________|________________________|
+ | 1    |             _____                           |
+ |      |            (  S  )                          |
+ |      |            (_____)                          |
+ |      |           /   |   \                         |
+ |      |          /    |    \                        |
+ |      |         /     |     \                       | 
+ |      |        /      |      \                      |
+ |      |     __/_     _|__     \____                 |
+ |      |    (  A )   (  B )    (  C )                | Initialize the queue.
+ |      |    (____)   (____)    (____)                |
+ |      |       \       |        /                    |
+ |      |        \      |       /      _____________  | 
+ |      |         \     |      /                      |
+ |      |          \    |     /        _____________  |
+ |      |           \   |    /             Queue      |
+ |      |            \  |   /                         |
+ |      |             \_|__/                          | 
+ |      |             (  D )                          |
+ |      |             (____)                          |
+ |______|_____________________________________________|________________________
+ | 2    |             _____                           |
+ |      |            (//S//)                          |
+ |      |            (_____)                          |
+ |      |           /   |   \                         |
+ |      |          /    |    \                        |
+ |      |         /     |     \                       | We start from visiting  
+ |      |        /      |      \                      | "S" (starting node),
+ |      |     __/_     _|__     \____                 | and mark it as visited.
+ |      |    (  A )   (  B )    (  C )                | 
+ |      |    (____)   (____)    (____)                |
+ |      |       \       |        /                    |
+ |      |        \      |       /      ______________ | 
+ |      |         \     |      /                      |
+ |      |          \    |     /        ______________ |
+ |      |           \   |    /             Queue      |
+ |      |            \  |   /                         |
+ |      |             \_|__/                          | 
+ |      |             (  D )                          |
+ |      |             (____)                          |
+ |______|_____________________________________________|________________________
+ | 3    |             _____                           |
+ |      |            (//S//)                          |
+ |      |            (_____)                          |
+ |      |           /   |   \                         |
+ |      |          /    |    \                        |
+ |      |         /     |     \                       | 
+ |      |        /      |      \                      | We then see an unvisited
+ |      |     __/_     _|__     \____                 | adjacent node from "S".
+ |      |    (//A/)   (  B )    (  C )                | In this example, we have
+ |      |    (____)   (____)    (____)                | three nodes but
+ |      |       \       |        /                    | alphabetically we choose
+ |      |        \      |       /      ______________ | "A", mark it as visited
+ |      |         \     |      /        |/A/|         | and enqueue it.
+ |      |          \    |     /         `````         |
+ |      |           \   |    /         ______________ |
+ |      |            \  |   /              Queue      |
+ |      |             \_|__/                          | 
+ |      |             (  D )                          |
+ |      |             (____)                          |
+ |______|_____________________________________________|________________________
+ | 4    |             _____                           |
+ |      |            (//S//)                          |
+ |      |            (_____)                          |
+ |      |           /   |   \                         |
+ |      |          /    |    \                        |
+ |      |         /     |     \                       | 
+ |      |        /      |      \                      | Next, the unvisited 
+ |      |     __/_     _|__     \____                 | adjacent node from "S" 
+ |      |    (//A/)   (//B/)    (  C )                | is "B".
+ |      |    (____)   (____)    (____)                | We mark it as visited
+ |      |       \       |        /                    | and enqueue it.
+ |      |        \      |       /                     | 
+ |      |         \     |      /   __________________ |
+ |      |          \    |     /     |/B/| |/A/|       |
+ |      |           \   |    /      ````` `````       |
+ |      |            \  |   /      __________________ |
+ |      |             \_|__/              Queue       | 
+ |      |             (  D )                          |
+ |      |             (____)                          |
+ |______|_____________________________________________|________________________
+ | 5    |             _____                           |
+ |      |            (//S//)                          |
+ |      |            (_____)                          |
+ |      |           /   |   \                         |
+ |      |          /    |    \                        |
+ |      |         /     |     \                       | 
+ |      |        /      |      \                      | Next, the unvisited 
+ |      |     __/_     _|__     \____                 | adjacent node from "S"
+ |      |    (//A/)   (//B/)    (//C/)                | is "C".
+ |      |    (____)   (____)    (____)                | We mark it as visited
+ |      |       \       |        /                    | and enqueue it.
+ |      |        \      |       / ___________________ | 
+ |      |         \     |      /  |/C/| |/B/| |/A/|   |
+ |      |          \    |     /   ````` ````` `````   |
+ |      |           \   |    /    ___________________ |
+ |      |            \  |   /           Queue         |
+ |      |             \_|__/                          | 
+ |      |             (  D )                          |
+ |      |             (____)                          |
+ |______|_____________________________________________|________________________
+ | 6    |             _____                           |
+ |      |            (//S//)                          |
+ |      |            (_____)                          |
+ |      |           /   |   \                         |
+ |      |          /    |    \                        |
+ |      |         /     |     \                       | Now, "S" is left with  
+ |      |        /      |      \                      | no unvisited adjacent 
+ |      |     __/_     _|__     \____                 | nodes.
+ |      |    (//A/)   (//B/)    (//C/)                | So, we dequeue and find
+ |      |    (____)   (____)    (____)                | "A".
+ |      |       \       |        /                    |
+ |      |        \      |       /                     | 
+ |      |         \     |      /     ________________ |
+ |      |          \    |     /      |/C/| |/B/|      |
+ |      |           \   |    /       ````` `````      |
+ |      |            \  |   /        ________________ |
+ |      |             \_|__/             Queue        | 
+ |      |             (  D )                          |
+ |      |             (____)                          |
+ |______|_____________________________________________|________________________
+ | 7    |             _____                           |
+ |      |            (//S//)                          |
+ |      |            (_____)                          |
+ |      |           /   |   \                         |
+ |      |          /    |    \                        |
+ |      |         /     |     \                       | 
+ |      |        /      |      \                      | From "A" we have "D"
+ |      |     __/_     _|__     \____                 | as unvisited adjacent
+ |      |    (//A/)   (//B/)    (//C/)                | node.
+ |      |    (____)   (____)    (____)                | We mark it as visited
+ |      |       \       |        /                    | and enqueue it.
+ |      |        \      |       /                     | 
+ |      |         \     |      / ____________________ |
+ |      |          \    |     /   |/D/| |/C/| |/B/|   |
+ |      |           \   |    /    ````` ````` `````   |
+ |      |            \  |   /    ____________________ |
+ |      |             \_|__/            Queue         | 
+ |      |             (//D/)                          |
+ |      |             (____)                          |
+ |______|_____________________________________________|______________________
+   
+   * At this stage, we are left with no unmarked (unvisited) nodes.
+   * But as per the algorithm we keep on dequeuing in order to
+     get all unvisited nodes. 
+   * When the queue gets emptied, the program is over.
+       
+       * implementation of this algorithm in C programming language -
+         `````````````````````````````````````````````````````````````
+            * Breadth First Traversal in C -
+              ````````````````````````````````
+     + We 'shall not see' the implementation of "Breadth First Traversal" 
+       (or Breadth First Search) in C programming language.  
+     + For our reference purpose, we shall follow our example and
+       take this as our "graph model" −
+        
+                      _____                            
+                     (  S  )                           
+                     (_____)                           
+                    /   |   \                          
+                   /    |    \                         
+                  /     |     \                         
+                 /      |      \                       
+              __/_     _|__     \____                  
+             (  A )   (  B )    (  C )                                                         (____)   (____)    (____)                 
+                \       |        /                     
+                 \      |       /      __________________    
+                  \     |      /                       
+                   \    |     /        __________________   
+                    \   |    /               Queue       
+                     \  |   /                          
+                      \_|__/                            
+                      (  D )                           
+                      (____)                           
+ 
+
+     * Implementation in C -
+       ```````````````````````
+   __________________________________________________
+  |  #include <stdio.h>
+  |  #include <stdlib.h>
+  |  #include <stdbool.h>
+  |
+  |  #define MAX 5
+  |
+  |  struct Vertex {
+  |     char label;
+  |     bool visited;
+  |  };
+  |
+  |  //queue variables
+  |
+  |  int queue[MAX];
+  |  int rear = -1;
+  |  int front = 0;
+  |  int queueItemCount = 0;
+  |
+  |  //graph variables
+  |
+  |  //array of vertices
+  |  struct Vertex* lstVertices[MAX];
+  | 
+  |  //adjacency matrix
+  |  int adjMatrix[MAX][MAX];
+  |
+  |  //vertex count
+  |  int vertexCount = 0;
+  |
+  |  //queue functions
+  | 
+  |  void insert(int data) {
+  |     queue[++rear] = data;
+  |     queueItemCount++;
+  |  }
+  |
+  |  int removeData() {
+  |     queueItemCount--;
+  |     return queue[front++]; 
+  |  }
+  | 
+  |  bool isQueueEmpty() {
+  |     return queueItemCount == 0;
+  |  }
+  |
+  |  //graph functions
+  |
+  |  //add vertex to the vertex list
+  |  void addVertex(char label) {
+  |     struct Vertex* vertex = (struct Vertex*) malloc(sizeof(struct Vertex));
+  |     vertex->label = label;  
+  |     vertex->visited = false;     
+  |     lstVertices[vertexCount++] = vertex;
+  |  }
+  |
+  |  //add edge to edge array
+  |  void addEdge(int start,int end) {
+  |     adjMatrix[start][end] = 1;
+  |     adjMatrix[end][start] = 1;
+  |  }
+  |
+  |  //display the vertex
+  |  void displayVertex(int vertexIndex) {
+  |     printf("%c ",lstVertices[vertexIndex]->label);
+  |  }       
+  |
+  |  //get the adjacent unvisited vertex
+  |  int getAdjUnvisitedVertex(int vertexIndex) {
+  |     int i;
+  |	  
+  |     for(i = 0; i<vertexCount; i++) {
+  |        if(adjMatrix[vertexIndex][i] == 1 && lstVertices[i]->visited == false)
+  |           return i;
+  |     }
+  |	
+  |     return -1;
+  |  }
+  | 
+  |  void breadthFirstSearch() {
+  |     int i;
+  |
+  |     //mark first node as visited
+  |     lstVertices[0]->visited = true;
+  |
+  |     //display the vertex
+  |     displayVertex(0);   
+  |
+  |     //insert vertex index in queue
+  |     insert(0);
+  |     int unvisitedVertex;
+  |
+  |     while(!isQueueEmpty()) {
+  |        //get the unvisited vertex of vertex which is at front of the queue
+  |        int tempVertex = removeData();   
+  |
+  |        //no adjacent vertex found
+  |        while((unvisitedVertex = getAdjUnvisitedVertex(tempVertex)) != -1) {    
+  |           lstVertices[unvisitedVertex]->visited = true;
+  |           displayVertex(unvisitedVertex);
+  |           insert(unvisitedVertex);               
+  |        }
+  |		
+  |     }   
+  |
+  |     //queue is empty, search is complete, reset the visited flag        
+  |     for(i = 0;i<vertexCount;i++) {
+  |        lstVertices[i]->visited = false;
+  |     }    
+  |  }
+  |
+  |  int main() {
+  |     int i, j;
+  |
+  |     for(i = 0; i<MAX; i++) // set adjacency {
+  |        for(j = 0; j<MAX; j++) // matrix to 0
+  |           adjMatrix[i][j] = 0;
+  |     }
+  |
+  |     addVertex('S');   // 0
+  |     addVertex('A');   // 1
+  |     addVertex('B');   // 2
+  |     addVertex('C');   // 3
+  |     addVertex('D');   // 4
+  | 
+  |     addEdge(0, 1);    // S - A
+  |     addEdge(0, 2);    // S - B
+  |     addEdge(0, 3);    // S - C
+  |     addEdge(1, 4);    // A - D
+  |     addEdge(2, 4);    // B - D
+  |     addEdge(3, 4);    // C - D
+  |	
+  |     printf("\nBreadth First Search: ");
+  |  
+  |     breadthFirstSearch();
+  |
+  |     return 0;
+  |  }
+  |_______________________________________________________________________
+     
+     * Compile and run the above program, it will produce the following
+       result.
+                Output -
+                `````````
+    ______________________________________
+   |  Breadth First Search: S A B C D     |
+   |______________________________________|
+__________________________________________________
+                                                  |
+      DSA - Breadth First Traversal               |                  
+__________________________________________________|
+            |
+            |
+1) What's the Heading ?
+-----------------------
+* DSA - Breadth First Traversal
+                                                                                        
+2) Definition of Breadth First Traversal ?
+------------------------------------------
+*
+ 
+3) What is Breadth First Traversal About ?
+------------------------------------------
+*
+*
+
+4) What does Breadth First Traversal Do ?
+-----------------------------------------
+*
+*
+
+5) Advantages/Benefits of Breadth First Traversal :
+---------------------------------------------------
+*
+*
+*
+
+6) Disadvantages/Drawback of Breadth First Traversal :
+------------------------------------------------------
+*
+*
+*  
+
+7) Examples of Breadth First Traversal :
+----------------------------------------
+*
+*
+_______________________________________________________________________________
+
+        
+       *** Tree Data Structure ***
+           ===================
+              1. DSA - Tree Data Structure
+              2. DSA - Tree Traversal
+              3. DSA - Binary Search Tree
+              4. DSA - AVL Tree
+              5. DSA - Spanning Tree
+              6. DSA - Heap
+
+ 1. <<<<<<<<< *** DSA - Tree Data Structure *** >>>>>>>>>
+                  =========================
+    * Tree represents the nodes connected by edges.
+    * We will discuss binary tree or binary search tree specifically.
+    
+    * Binary Tree is a special datastructure used for data storage purposes.
+    * A binary tree has a special condition that each node can have a 
+      maximum of two children.
+    * A binary tree has the benefits of both an ordered array and a linked
+      list as search is as quick as in a sorted array and insertion or 
+      deletion operation are as fast as in linked list.
+                           
+                                   Root
+                                    |
+                                    |
+                                  __V__                            
+                                /(//A//)\                        
+                               /         \                        
+                              /           \                          
+                             /             \                         
+                            /               \                         
+                           /                 \                       
+                       ___/                 __\______                  
+                      (//B/)               (//C//////)                    
+                       /  \                  /       \
+                      /    \                /         \
+                     /      \              /           \
+                    /        \            /             \      
+                   /          \          /               \                        
+                 _/__          \___    _/__              _\__   
+Parent Node---> (//D/)        (//E/)  (//F/)<-Siblings->(//G/)      
+                /    \          /        ^
+              _/__    \___    _/__       |
+Child Node-->(//H/)  (//I/)  (//J/)      |
+                                         |
+                                         |
+                                         |
+                                         | 
+                                     Leaf Node
+  
+ ________________________________________________________________
+
+
+                                   Root
+                                    |
+                                    |
+                                  __V__                            
+       `````````````````````````/(//A//)\````````````````````Level 0                        
+                               /         \                        
+                              /           \                          
+                             /             \                         
+                            /               \                         
+                           /                 \                       
+                       ___/                 __\______                  
+       ```````````````(//B/)```````````````(//C//////)``````````Level 1                    
+                       /  \                  /       \
+                      /    \                /         \
+                   /\/      \              /           \
+                  / /\       \            /             \      
+                 / /  \       \          /               \                        
+                /_/__  \       \___    _/__              _\__   
+Parent Node--->/(//D/)``\``````(//E/)`(//F/)<-Siblings->(//G/)``Level 2      
+              / /    \   \      /       ^ 
+             /_/__    \___\   _/__      |   
+Child Node-->(//H/)  (//I/)\ (//J/)`````|```````````````````````Level 3  
+           /_ _ _ _ _ _ _ __\           |                    
+                   ^                    |
+                   |                    |
+                   |                    |
+                   |                    |
+                Sub-tree                |        
+                                    Leaf Node    
+                            
+           ** Important Terms -
+              ``````````````````               
+     Following are the important terms with respect to tree :
+
+  * Path -
+    '''''''
+     +  Path refers to the sequence of nodes along the edges of a tree.
+
+  * Root -
+    '''''''
+     + The node at the top of the tree is called root.
+     + There is only one root per tree and one path from
+       the root node to any node.
+
+  * Parent -
+    '''''''''
+     + Any node except the root node has one edge upward to
+       a node called parent.
+ 
+  * Child -
+    ''''''''
+     + The node below a given node connected by its edge downward
+       is called its child node.
+
+  * Leaf -
+    '''''''
+     + The node which does not have any child node is called the
+       leaf node.
+
+  * Subtree -
+    ''''''''''
+     + Subtree represents the descendants of a node.
+
+  * Visiting -
+    '''''''''''
+     + Visiting refers to checking the value of a node when 
+       control is on the node.
+
+  * Traversing -
+    '''''''''''''
+     + Traversing means passing through nodes in a specific order.
+
+  * Levels -
+    '''''''''
+     + Level of a node represents the generation of a node.
+     + If the root node is at level 0, then its next child
+       node is at level 1, its grandchild is at level 2, 
+       and so on.
+
+  * Keys -
+    ''''''' 
+     + Key represents a value of a node based on which a search 
+       operation is to be carried out for a node. 
+   
+     ** Binary Search Tree Representation :
+        =================================  
+    
+    * Binary Search tree exhibits a special behavior.  
+    * A node's left child must have a value less than its parent's 
+      value and the node's right child must have a value greater
+      than its parent value.   
+                                  _____                            
+                                /(  27 )\                        
+                               /         \                        
+                              /           \                          
+                             /             \                         
+                            /               \                         
+                           /                 \                       
+                       ___/                   \____                  
+                      ( 14 )                  ( 35 )                    
+                       /  \                    /  \
+                      /    \                  /    \
+                     /      \                /      \
+                    /        \              /        \      
+                   /          \            /          \                        
+                 _/__          \___      _/__         _\__   
+                ( 10 )        ( 19 )    ( 31 )       ( 42 )
+
+   
+    * We're going to implement tree using node object and connecting
+      them through references.
+                   
+    ** Tree Node :
+       =========
+  
+   * The code to write a tree node would be similar to what is 
+     given below.
+   * It has a data part and references to its left and right
+     child nodes. 
+    _______________________________________
+   |  struct node {
+   |     int data;   
+   |     struct node *leftChild;
+   |     struct node *rightChild;
+   |  };
+   |_______________________________________
+
+   * In a tree, all nodes share common construct.
+       
+     ** BST Basic Operations :
+        ====================
+  + The basic operations that can be performed on a binary search tree
+    data structure, are the following −
+    
+   Insert − Inserts an element in a tree/create a tree.
+   ''''''
+   Search − Searches an element in a tree.
+   ''''''
+   Preorder Traversal − Traverses a tree in a pre-order manner.
+   ''''''''''''''''''
+   Inorder Traversal − Traverses a tree in an in-order manner.
+   '''''''''''''''''
+   Postorder Traversal − Traverses a tree in a post-order manner.
+   '''''''''''''''''''
+     
+   * We shall learn creating (inserting into) a tree structure and 
+     searching a data item in a tree in this chapter.
+   * We shall learn about tree traversing methods in the coming chapter.
+     
+     ** Insert Operation :
+        ================
+   * The very first insertion creates the tree.
+   * Afterwards, whenever an element is to be inserted, first locate
+     its proper location.
+   * Start searching from the root node, then if the data is less than
+     the key value, search for the empty location in the left subtree
+     and insert the data. 
+   * Otherwise, search for the empty location in the right
+     subtree and insert the data.
+          
+      * Algorithm -
+        ````````````
+   _____________________________________________________
+  |  If root is NULL 
+  |     then create root node
+  |  return
+  |
+  |  If root exists then
+  |     compare the data with node.data
+  | 
+  |     while until insertion position is located
+  |
+  |        If data is greater than node.data
+  |           goto right subtree
+  |        else
+  |           goto left subtree
+  |
+  |     endwhile 
+  | 
+  |     insert data
+  |	
+  |  end If
+  |_______________________________________________________ 
+
+    * Implementation -
+      ``````````````````   
+      + The implementation of insert function should look like this −
+            ````````````````````````````````` 
+   _________________________________________________________________________
+  |
+  |  void insert(int data) {
+  |     struct node *tempNode = (struct node*) malloc(sizeof(struct node));
+  |     struct node *current;
+  |     struct node *parent;
+  |
+  |     tempNode->data = data;
+  |     tempNode->leftChild = NULL;
+  |     tempNode->rightChild = NULL;
+  |
+  |     //if tree is empty, create root node
+  |     if(root == NULL) {
+  |        root = tempNode;
+  |     } else {
+  |        current = root;
+  |        parent  = NULL;
+  |
+  |        while(1) {                
+  |           parent = current;
+  |
+  |           //go to left of the tree
+  |           if(data < parent->data) {
+  |              current = current->leftChild;                
+  |          
+  |              //insert to the left
+  |              if(current == NULL) {
+  |                 parent->leftChild = tempNode;
+  |                 return;
+  |              }
+  |           }
+  |			
+  |           //go to right of the tree
+  |           else {
+  |              current = current->rightChild;
+  |             
+  |              //insert to the right
+  |              if(current == NULL) {
+  |                 parent->rightChild = tempNode;
+  |                 return;
+  |              }
+  |           }
+  |        }            
+  |     }
+  |  }  
+  |_________________________________________________________________
+    
+    ** Search Operation :
+       ================
+   + Whenever an element is to be searched, start searching from the root 
+     node, then if the data is less than the key value, search for the
+     element in the left subtree.
+   + Otherwise, search for the element in the right subtree.
+   + Follow the same algorithm for each node.
+      
+     * Algorithm -
+       ````````````
+   ____________________________________________________
+  |
+  |  If root.data is equal to search.data
+  |     return root
+  |  else
+  |     while data not found
+  |
+  |        If data is greater than node.data
+  |           goto right subtree
+  |        else
+  |           goto left subtree
+  |       
+  |        If data found
+  |           return node
+  |     endwhile 
+  |  
+  |     return data not found
+  | 
+  |  end if
+  |______________________________________________________   
+    
+    * The implementation of this algorithm should look like this -
+          ````````````````````````````````
+   _____________________________________________________
+  |
+  |  struct node* search(int data) {
+  |     struct node *current = root;
+  |     printf("Visiting elements: ");
+  |
+  |     while(current->data != data) {
+  |        if(current != NULL)
+  |        printf("%d ",current->data); 
+  |    
+  |        //go to left tree
+  |
+  |        if(current->data > data) {
+  |           current = current->leftChild;
+  |        }
+  |        //else go to right tree
+  |        else {                
+  |           current = current->rightChild;
+  |        }
+  |
+  |        //not found
+  |        if(current == NULL) {
+  |           return NULL;
+  |        }
+  |     }
+  |     return current;
+  |  }
+  |________________________________________________________ 
+      
+     * About the implementation of binary search tree data structure :
+                 ``````````````````````````````````````````````````` 
+         * Tree Traversal in C -
+           ``````````````````````
+   + 'Traversal' is a process to 'visit all the nodes of a tree' and may print
+     their values too.
+   + Because, all 'nodes' are connected via edges (links) we always start
+     from the root (head) node.
+   + That is, we cannot random access a node in a tree.
+   + There are 'three ways' which we use to 'traverse a tree' −
+                ``````````               ``  ```````````````
+        a) In-order Traversal
+           ''''''''''''''''''
+
+        b) Pre-order Traversal
+           '''''''''''''''''''
+
+        c) Post-order Traversal
+           '''''''''''''''''''' 
+       
+  * Look at the 'implementation of tree traversal' in C programming language 
+    here using the following 'binary tree' −
+                              ```````````
+                                  _____                            
+                                /(  27 )\                        
+                               /         \                        
+                              /           \                          
+                             /             \                         
+                            /               \                         
+                           /                 \                       
+                       ___/                   \____                  
+                      ( 14 )                  ( 35 )                    
+                       /  \                    /  \
+                      /    \                  /    \
+                     /      \                /      \
+                    /        \              /        \      
+                   /          \            /          \                        
+                 _/__          \___      _/__         _\__   
+                ( 10 )        ( 19 )    ( 31 )       ( 42 )
+
+   
+     * Implementation in C -
+       ``````````````````````
+    ________________________________________________________________________
+   |
+   |  #include <stdio.h>
+   |  #include <stdlib.h>
+   |
+   |  struct node {
+   |     int data; 
+   |	
+   |     struct node *leftChild;
+   |     struct node *rightChild;
+   |  };
+   |
+   |  struct node *root = NULL;
+   |
+   |  void insert(int data) {
+   |     struct node *tempNode = (struct node*) malloc(sizeof(struct node));
+   |     struct node *current;
+   |     struct node *parent;
+   |
+   |     tempNode->data = data;
+   |     tempNode->leftChild = NULL;
+   |     tempNode->rightChild = NULL;
+   |
+   |     //if tree is empty
+   |     if(root == NULL) {
+   |        root = tempNode;
+   |     } else {
+   |        current = root;
+   |        parent = NULL;
+   |
+   |        while(1) { 
+   |           parent = current;
+   |          
+   |           //go to left of the tree
+   |           if(data < parent->data) {
+   |              current = current->leftChild;                
+   |            
+   |              //insert to the left
+   |              if(current == NULL) {
+   |                 parent->leftChild = tempNode;
+   |                 return;
+   |              }
+   |           }  //go to right of the tree
+   |           else {
+   |              current = current->rightChild;
+   |
+   |              //insert to the right
+   |              if(current == NULL) {
+   |                 parent->rightChild = tempNode;
+   |                 return;
+   |              }
+   |           }
+   |        }            
+   |     }
+   |  }
+   |
+   |  struct node* search(int data) {
+   |     struct node *current = root;
+   |     printf("Visiting elements: ");
+   |
+   |     while(current->data != data) {
+   |        if(current != NULL)
+   |           printf("%d ",current->data); 
+   |
+   |        //go to left tree
+   |        if(current->data > data) {
+   |           current = current->leftChild;
+   |        }
+   |        //else go to right tree
+   |        else {                
+   |           current = current->rightChild;
+   |        }
+   | 
+   |        //not found
+   |        if(current == NULL) {
+   |           return NULL;
+   |        }
+   |     }
+   |
+   |     return current;
+   |  }
+   |
+   |  void pre_order_traversal(struct node* root) {
+   |     if(root != NULL) {
+   |        printf("%d ",root->data);
+   |        pre_order_traversal(root->leftChild);
+   |        pre_order_traversal(root->rightChild);
+   |     }
+   |  }
+   |
+   |  void inorder_traversal(struct node* root) {
+   |     if(root != NULL) {
+   |        inorder_traversal(root->leftChild);
+   |        printf("%d ",root->data);          
+   |        inorder_traversal(root->rightChild);
+   |     }
+   |  }
+   | 
+   |  void post_order_traversal(struct node* root) {
+   |     if(root != NULL) {
+   |        post_order_traversal(root->leftChild);
+   |        post_order_traversal(root->rightChild);
+   |        printf("%d ", root->data);
+   |     }
+   |  }
+   |
+   |  int main() {
+   |     int i;
+   |     int array[7] = { 27, 14, 35, 10, 19, 31, 42 };
+   |
+   |     for(i = 0; i < 7; i++)
+   |        insert(array[i]);
+   |
+   |     i = 31;
+   |     struct node * temp = search(i);
+   |
+   |     if(temp != NULL) {
+   |        printf("[%d] Element found.", temp->data);
+   |        printf("\n");
+   |     }else {
+   |        printf("[ x ] Element not found (%d).\n", i);
+   |     }
+   |
+   |     i = 15;
+   |     temp = search(i);
+   |
+   |     if(temp != NULL) {
+   |        printf("[%d] Element found.", temp->data);
+   |        printf("\n");
+   |     }else {
+   |        printf("[ x ] Element not found (%d).\n", i);
+   |     }            
+   |
+   |     printf("\nPreorder traversal: ");
+   |     pre_order_traversal(root);
+   |
+   |     printf("\nInorder traversal: ");
+   |     inorder_traversal(root);
+   |
+   |     printf("\nPost order traversal: ");
+   |     post_order_traversal(root);       
+   |
+   |     return 0;
+   |  }
+   |_____________________________________________________________________
+
+    * compile and run the above program, it will produce the
+      result -
+                 Output -
+   _________________________________________________________________
+  |
+  |  Visiting elements: 27 35 [31] Element found.
+  |  Visiting elements: 27 14 19 [ x ] Element not found (15).
+  |
+  |  Preorder traversal: 27 14 10 19 35 31 42 
+  |  Inorder traversal: 10 14 19 27 31 35 42 
+  |  Post order traversal: 10 19 14 31 42 35 27
+  |_________________________________________________________________ 
+__________________________________________________
+                                                  |
+      DSA - Tree Data Structure                   |                  
+__________________________________________________|
+            |
+            |
+1) What's the Heading ?
+-----------------------
+* DSA - Tree Data Structure
+                                                                                        
+2) Definition of Tree Data Structure ?
+--------------------------------------
+*
+ 
+3) What is Tree Data Structure About ?
+--------------------------------------
+*
+*
+
+4) What does Tree Data Structure Do ?
+-------------------------------------
+*
+*
+
+5) Advantages/Benefits of Tree Data Structure :
+-----------------------------------------------
+*
+*
+*
+
+6) Disadvantages/Drawback of Tree Data Structure :
+--------------------------------------------------
+*
+*
+*  
+
+7) Examples of Tree Data Structure :
+------------------------------------
+*
+*
+_______________________________________________________________________________
+
+ 2. <<<<<<<<< DSA - Tree Traversal >>>>>>>>>
+  
+    * Traversal is a process to visit all the nodes of a tree and may print
+      their values too.
+    * Because, all nodes are connected via edges (links) we always start
+      from the root (head) node.
+    * That is, we cannot randomly access a node in a tree.
+    * There are three ways which we use to traverse a tree −
+                ``````````                 ```````````````
+        a) In-order Traversal
+           ''''''''''''''''''
+        b) Pre-order Traversal
+           '''''''''''''''''''
+        c) Post-order Traversal
+           ''''''''''''''''''''
+    * Generally, we traverse a tree to search or locate a given item or
+      key in the tree or to print all the values it contains.
+         
+               a) In-order Traversal :
+                  ''''''''''''''''''''
+  * In this traversal method, the left subtree is visited first, then the root
+    and later the right sub-tree. 
+  * We should always remember that every node may represent a subtree
+    itself.
+  
+  * If a binary tree is traversed in-order, the output will produce sorted
+    key values in an ascending order.
+                            
+                                   Root
+                                    |
+                                    |
+                                    |
+                                  __V__                            
+                             2  /(  A  )\                        
+                               /         \                        
+                              /           \                          
+                             /             \   3                      
+                            /               \                         
+                    1      /                 \                       
+                       ___/                   \___                  
+                      ( B )                   ( C )                    
+                       /  \                  2 /  \
+                   2  /    \                  /    \
+                     /      \                /      \
+                    /        \              /        \      
+                   /          \            /          \                        
+                 _/__          \___      _/__         _\__   
+              1 (  D )       3( E  )   1( F  )     3 ( G  )
+           
+                Left Subtree               Right Subtree
+   
+  * We start from "A", and following in-order traversal, we move to its 
+    left subtree "B".
+  * "B" is also traversed in-order.
+  * The process goes on until all the nodes are visited.
+  * The output of 'inorder traversal' of this tree will be −
+        ``````     `````````````````
+     ___________________________________
+    | 
+    |  D → B → E → A → F → C → G
+    |___________________________________
+          
+        Algorithm -
+        `````````
+    __________________________________________________
+   |
+   |  Until all nodes are traversed −
+   |  Step 1 − Visit root node.
+   |  Step 2 − Recursively traverse left subtree.
+   |  Step 3 − Recursively traverse right subtree.
+   |___________________________________________________
+
+    
+        b) Pre-order Traversal :
+           ''''''''''''''''''''''
+   * In this traversal method, the root node is visited first, then the left
+     subtree and finally the right subtree.
+              
+                                   Root
+                                    |
+                                    |
+                                    |
+                               1  __V__                            
+                                /(  A  )\                        
+                               /         \                        
+                              /           \                          
+                             /             \   3                      
+                            /               \                         
+                    2      /                 \                       
+                       ___/                   \___                  
+                      ( B )                   ( C )                    
+                     1 /  \                  1 /  \
+                      /    \                  /    \
+                     /      \                /      \
+                    /        \              /        \      
+                   /          \            /          \                        
+                 _/__          \___      _/__         _\__   
+              2 (  D )       3( E  )   2( F  )      3( G  )
+           
+                Left Subtree               Right Subtree
+  
+  * We start from "A", and following 'pre-order traversal', we first visit "A"
+    itself and then move to its left subtree "B".
+  * "B" is also 'traversed pre-order'.
+  * The process goes on until all the nodes are visited.
+  * The output of 'pre-order traversal' of this tree will be −
+        ``````     ```````````````````
+    __________________________________________
+   |
+   |  A → B → D → E → C → F → G 
+   |__________________________________________
+      
+      * Algorithm -
+        ````````````
+   ____________________________________________________
+  | 
+  |  Until all nodes are traversed −
+  |  Step 1 − Visit root node.
+  |  Step 2 − Recursively traverse left subtree.
+  |  Step 3 − Recursively traverse right subtree.
+  |_____________________________________________________ 
+      
+        c) Post-order Traversal :
+           '''''''''''''''''''''''
+     * In this traversal method, the 'root node' is 'visited last',
+       hence the name. 
+     * First we traverse the left subtree, then the right subtree and
+       finally the root node.           
+                       
+                                   Root
+                                    |
+                                    |
+                                    |
+                               3  __V__                            
+                                /(  A  )\                        
+                               /         \                        
+                              /           \   2                       
+                             /             \                          
+                   1        /               \                         
+                           /                 \                       
+                       ___/                   \___                  
+                      ( B )                   ( C )                    
+                     3 /  \                  3 /  \
+                      /    \                  /    \
+                     /      \                /      \
+                    /        \              /        \      
+                   /          \            /          \                        
+                 _/__          \___      _/__         _\__   
+               1(  D )       2( E  )   1( F  )      2( G  )
+           
+                Left Subtree               Right Subtree
+
+  * We start from "A", and following 'Post-order traversal', we first
+    visit the 'left subtree' "B".
+  * "B" is also 'traversed post-order'.
+  * The process goes on until all the nodes are visited.
+  * The output of 'post-order traversal' of this tree will be −
+                   ````````````````````
+    _____________________________________
+   |
+   |  D → E → B → F → G → C → A 
+   |_____________________________________
+      
+      * Algorithm -
+        ````````````
+    ___________________________________________________
+   | 
+   |  Until all nodes are traversed −
+   |  Step 1 − Recursively traverse left subtree.
+   |  Step 2 − Recursively traverse right subtree.
+   |  Step 3 − Visit root node. 
+   |____________________________________________________ 
+
+      ** check the C implementation of tree traversing -
+                   ```````````````````````````````````
+           * Tree Traversal in C -
+             ```````````````````
+   + We shall now look at the implementation of 'tree traversal' in C
+     programming language here using the following binary tree −
+                                                   ```````````
+                                  _____                            
+                                /(  27 )\                        
+                               /         \                        
+                              /           \                          
+                             /             \                         
+                            /               \                         
+                           /                 \                       
+                       ___/                   \____                  
+                      ( 14 )                  ( 35 )                    
+                       /  \                    /  \
+                      /    \                  /    \
+                     /      \                /      \
+                    /        \              /        \      
+                   /          \            /          \                        
+                 _/__          \___      _/__         _\__   
+                ( 10 )        ( 19 )    ( 31 )       ( 42 )
+
+      
+    * Implementation in C -
+      ``````````````````````
+    ________________________________________________________________________
+   |
+   |  #include <stdio.h>
+   |  #include <stdlib.h>
+   |
+   |  struct node {
+   |     int data; 
+   |	
+   |     struct node *leftChild;
+   |     struct node *rightChild;
+   |  };
+   |
+   |  struct node *root = NULL;
+   |
+   |  void insert(int data) {
+   |     struct node *tempNode = (struct node*) malloc(sizeof(struct node));
+   |     struct node *current;
+   |     struct node *parent;
+   |
+   |     tempNode->data = data;
+   |     tempNode->leftChild = NULL;
+   |     tempNode->rightChild = NULL;
+   |
+   |     //if tree is empty
+   |     if(root == NULL) {
+   |        root = tempNode;
+   |     } else {
+   |        current = root;
+   |        parent = NULL;
+   |
+   |        while(1) { 
+   |           parent = current;
+   |          
+   |           //go to left of the tree
+   |           if(data < parent->data) {
+   |              current = current->leftChild;                
+   |            
+   |              //insert to the left
+   |              if(current == NULL) {
+   |                 parent->leftChild = tempNode;
+   |                 return;
+   |              }
+   |           }  //go to right of the tree
+   |           else {
+   |              current = current->rightChild;
+   |
+   |              //insert to the right
+   |              if(current == NULL) {
+   |                 parent->rightChild = tempNode;
+   |                 return;
+   |              }
+   |           }
+   |        }            
+   |     }
+   |  }
+   |
+   |  struct node* search(int data) {
+   |     struct node *current = root;
+   |     printf("Visiting elements: ");
+   |
+   |     while(current->data != data) {
+   |        if(current != NULL)
+   |           printf("%d ",current->data); 
+   |
+   |        //go to left tree
+   |        if(current->data > data) {
+   |           current = current->leftChild;
+   |        }
+   |        //else go to right tree
+   |        else {                
+   |           current = current->rightChild;
+   |        }
+   | 
+   |        //not found
+   |        if(current == NULL) {
+   |           return NULL;
+   |        }
+   |     }
+   |
+   |     return current;
+   |  }
+   |
+   |  void pre_order_traversal(struct node* root) {
+   |     if(root != NULL) {
+   |        printf("%d ",root->data);
+   |        pre_order_traversal(root->leftChild);
+   |        pre_order_traversal(root->rightChild);
+   |     }
+   |  }
+   |
+   |  void inorder_traversal(struct node* root) {
+   |     if(root != NULL) {
+   |        inorder_traversal(root->leftChild);
+   |        printf("%d ",root->data);          
+   |        inorder_traversal(root->rightChild);
+   |     }
+   |  }
+   | 
+   |  void post_order_traversal(struct node* root) {
+   |     if(root != NULL) {
+   |        post_order_traversal(root->leftChild);
+   |        post_order_traversal(root->rightChild);
+   |        printf("%d ", root->data);
+   |     }
+   |  }
+   |
+   |  int main() {
+   |     int i;
+   |     int array[7] = { 27, 14, 35, 10, 19, 31, 42 };
+   |
+   |     for(i = 0; i < 7; i++)
+   |        insert(array[i]);
+   |
+   |     i = 31;
+   |     struct node * temp = search(i);
+   |
+   |     if(temp != NULL) {
+   |        printf("[%d] Element found.", temp->data);
+   |        printf("\n");
+   |     }else {
+   |        printf("[ x ] Element not found (%d).\n", i);
+   |     }
+   |
+   |     i = 15;
+   |     temp = search(i);
+   |
+   |     if(temp != NULL) {
+   |        printf("[%d] Element found.", temp->data);
+   |        printf("\n");
+   |     }else {
+   |        printf("[ x ] Element not found (%d).\n", i);
+   |     }            
+   |
+   |     printf("\nPreorder traversal: ");
+   |     pre_order_traversal(root);
+   |
+   |     printf("\nInorder traversal: ");
+   |     inorder_traversal(root);
+   |
+   |     printf("\nPost order traversal: ");
+   |     post_order_traversal(root);       
+   |
+   |     return 0;
+   |  }
+   |_____________________________________________________________________
+          
+    * Compile and run the above program, it will produce the
+      result -
+         
+                        Output -
+   _________________________________________________________________
+  |
+  |  Visiting elements: 27 35 [31] Element found.
+  |  Visiting elements: 27 14 19 [ x ] Element not found (15).
+  |
+  |  Preorder traversal: 27 14 10 19 35 31 42 
+  |  Inorder traversal: 10 14 19 27 31 35 42 
+  |  Post order traversal: 10 19 14 31 42 35 27
+  |_________________________________________________________________ 
+__________________________________________________
+                                                  |
+       DSA - Tree Traversal                       |                  
+__________________________________________________|
+            |
+            |
+1) What's the Heading ?
+-----------------------
+* DSA - Tree Traversal
+                                                                                        
+2) Definition of Tree Traversal ?
+---------------------------------
+*
+ 
+3) What is Tree Traversal About ?
+---------------------------------
+*
+*
+
+4) What does Tree Traversal Do ?
+--------------------------------
+*
+*
+
+5) Advantages/Benefits of Tree Traversal :
+------------------------------------------
+*
+*
+*
+
+6) Disadvantages/Drawback of Tree Traversal :
+---------------------------------------------
+*
+*
+*  
+
+7) Examples of Tree Traversal :
+-------------------------------
+*
+*
+_______________________________________________________________________________
+
+ 3. <<<<<<<<< DSA - Binary Search Tree >>>>>>>>>
+  
+    * A "Binary Search Tree (BST)" is a 'tree' in which all the 'nodes'
+      follow the below-mentioned properties − 
+          
+    (A) The value of the 'key' of the "left sub-tree" is less than the value
+        of its 'parent (root)' node's key.
+     
+    (B) The value of the 'key' of the "right sub-tree" is greater than or
+        equal to the value of its 'parent (root)' node's key.
+ 
+   * Thus, BST divides all its sub-trees into two segments; 
+     the left sub-tree and the right sub-tree and can be defined as − 
+    ____________________________________________________________
+   |
+   |  left_subtree (keys) < node (key) ≤ right_subtree (keys)
+   |____________________________________________________________
+
+     ** Representation :
+        ==============
+   * BST is a 'collection of nodes arranged' in a way where they maintain
+     'BST properties'.
+   * Each node has a key and an associated value.
+   * While searching, the desired key is compared to the keys in
+     BST and if found, the associated value is retrieved.
+   
+   * Following is a pictorial representation of BST −
+                    ```````````````````````````````
+                                  _____                            
+                                /(  27 )\                        
+                               /         \                        
+                              /           \                          
+                             /             \                         
+                            /               \                         
+                           /                 \                       
+                       ___/                   \____                  
+                      ( 14 )                  ( 35 )                    
+                       /  \                    /  \
+                      /    \                  /    \
+                     /      \                /      \
+                    /        \              /        \      
+                   /          \            /          \                        
+                 _/__          \___      _/__         _\__   
+                ( 10 )        ( 19 )    ( 31 )       ( 42 )
+
+   * We observe that the root node key (27) has all less-valued
+     keys on the left sub-tree and the higher valued keys on the
+     right sub-tree.
+    
+     ** Basic Operations :     
+        ================
+      + Following are the basic operations of a tree −
+       
+       * Search − Searches an element in a tree.
+         ''''''
+
+       * Insert − Inserts an element in a tree.
+         ''''''
+
+       * Pre-order Traversal − Traverses a tree in a pre-order manner.
+         '''''''''''''''''''
+
+       * In-order Traversal − Traverses a tree in an in-order manner.
+         ''''''''''''''''''
+
+       * Post-order Traversal − Traverses a tree in a post-order manner.
+         ''''''''''''''''''''
+      
+       
+      ** Node :
+         ====
+   * Define a node having some data, references to its left and
+     right child nodes.
+    _____________________________________
+   |
+   |  struct node {
+   |     int data;   
+   |     struct node *leftChild;
+   |     struct node *rightChild;
+   |  };
+   |______________________________________
+
+      
+      *** Search Operation :
+          ================
+   * Whenever an element is to be searched, start searching from
+     the root node.
+   * Then if the data is less than the key value, search for the
+     element in the left subtree.
+   * Otherwise, search for the element in the right subtree. 
+   * Follow the same algorithm for each node.
+        
+      * Algorithm :
+        ````````````
+    ______________________________________________________________
+   |
+   |  struct node* search(int data){
+   |     struct node *current = root;
+   |     printf("Visiting elements: ");
+   |	
+   |     while(current->data != data){
+   |	
+   |        if(current != NULL) {
+   |           printf("%d ",current->data);
+   |			
+   |           //go to left tree
+   |           if(current->data > data){
+   |              current = current->leftChild;
+   |           }  //else go to right tree
+   |           else {                
+   |              current = current->rightChild;
+   |           }
+   |			
+   |           //not found
+   |           if(current == NULL){
+   |              return NULL;
+   |           }
+   |        }			
+   |     }
+   |
+   |     return current;
+   |  }
+   |________________________________________________________________ 
+     
+     ** Insert Operation :
+        ================
+   * Whenever an element is to be inserted, first locate its
+     proper location.
+   * Start searching from the root node, then if the data is less
+     than the key value, search for the empty location in the left
+     subtree and insert the data.
+   * Otherwise, search for the empty location in the right
+     subtree and insert the data.
+         
+        + Algorithm -
+          ````````````
+    ________________________________________________________________________
+   |  void insert(int data) {
+   |     struct node *tempNode = (struct node*) malloc(sizeof(struct node));
+   |     struct node *current;
+   |     struct node *parent;
+   |
+   |     tempNode->data = data;
+   |     tempNode->leftChild = NULL;
+   |     tempNode->rightChild = NULL;
+   |
+   |     //if tree is empty
+   |     if(root == NULL) {
+   |        root = tempNode;
+   |     } else {
+   |        current = root;
+   |        parent = NULL;
+   |
+   |        while(1) {                
+   |           parent = current;
+   |			
+   |           //go to left of the tree
+   |           if(data < parent->data) {
+   |              current = current->leftChild;                
+   |              //insert to the left
+   |				
+   |              if(current == NULL) {
+   |                 parent->leftChild = tempNode;
+   |                 return;
+   |              }
+   |           }  //go to right of the tree
+   |           else {
+   |              current = current->rightChild;
+   |         
+   |              //insert to the right
+   |              if(current == NULL) {
+   |                 parent->rightChild = tempNode;
+   |                 return;
+   |              }
+   |           }
+   |        }            
+   |     }
+   |  }
+   |_________________________________________________________________         
+__________________________________________________
+                                                  |
+       DSA - Binary Search Tree                   |                  
+__________________________________________________|
+            |
+            |
+1) What's the Heading ?
+-----------------------
+* DSA - Binary Search Tree
+                                                                                        
+2) Definition of Binary Search Tree ?
+-------------------------------------
+*
+ 
+3) What is Binary Search Tree About ?
+-------------------------------------
+*
+*
+
+4) What does Binary Search Tree Do ?
+------------------------------------
+*
+*
+
+5) Advantages/Benefits of Binary Search Tree :
+----------------------------------------------
+*
+*
+*
+
+6) Disadvantages/Drawback of Binary Search Tree :
+-------------------------------------------------
+*
+*
+*  
+
+7) Examples of Binary Search Tree :
+-----------------------------------
+*
+*
+_______________________________________________________________________________
+
+ 4. <<<<<<<<< DSA - AVL Tree >>>>>>>>>
+    
+    * What if the 'input to binary search tree' comes in a sorted
+      (ascending or descending) manner? It will then look like this −
+       
+                              _____           ____                 
+                             (  42 )         ( 10 )                        
+                               /                \                        
+                              /                  \                          
+                             /                    \                         
+                            /                      \                         
+                           /                        \                       
+                       ___/                          \___                  
+                      ( 35 )                        ( 14 )                    
+                       /  \                            \
+                      /    \                            \
+                     /      \                            \
+                    /        \                            \      
+                   /          \                            \                        
+                 _/__        __\_                          _\__   
+                ( 19 )      ( 31 )                        ( 19 )
+                /     \                                   /    \
+               /       \                                 /      \
+             _/__     __\_                             _/__      \___
+            ( 14 )   ( 27 )                           ( 27 )    ( 35 )
+            /                                                     /   \
+           /                                                     /     \
+         _/__                                                  _/__     \___
+        ( 10 )                                                ( 31 )   ( 42 ) 
+     
+ If input 'appears' non-increasing manner   If input 'appears' non-decreasing manner  
+
+   
+   * It is observed that BST's worst-case performance is closest to linear
+     search algorithms, that is Ο(n).
+                                ''''  
+   * In real-time data, we cannot predict data pattern and their frequencies. 
+   * So, a need arises to balance out the existing BST.
+
+  ** Named after their inventor "Adelson", "Velski" & "Landis", "AVL trees" are
+     height balancing binary search tree.   ``````     ``````    `````````
+   * AVL tree checks the height of the left and the right sub-trees and
+     assures that the difference is not more than 1.
+   * This difference is called the "Balance Factor".
+                                    ``````````````
+   * Here we see that the first tree is balanced and the next two
+     trees are not balanced − 
+
+                                       2  ___        ___  2
+                                         ( C )      ( A )   
+                                           /             \
+                                          /               \
+          0   ___                  1  ___/                _\_  1 
+             ( B )                   ( B )               ( B )     
+              / \                      /                     \
+             /   \                    /                       \
+            /     \                  /                         \         
+       0  _/_      \___  0     0 ___/                          _\_  0
+         ( A )     ( C )        ( A )                         ( C ) 
+          
+            Balanced            Not Balanced               Not Balanced
+
+   
+   * In the second tree, the left subtree of C has height 2 and the right 
+     subtree has height 0, so the difference is 2.
+   * In the third tree, the right subtree of A has height 2 and the left
+     is missing, so it is 0, and the difference is 2 again. 
+   * AVL tree permits difference (balance factor) to be only 1.
+     ________________________________________________________________
+    |
+    |  BalanceFactor = height(left-sutree) − height(right-sutree)
+    |________________________________________________________________
+
+   * If the difference in the height of left and right sub-trees is 
+     more than 1, the tree is balanced using some rotation techniques.
+     
+      *** AVL Rotations :
+          =============
+   + To balance itself, an AVL tree may perform the following four
+     kinds of rotations −
+   
+       1) Left rotation 
+          '''''''''''''
+       2) Right rotation
+          ''''''''''''''
+       3) Left-Right rotation
+          '''''''''''''''''''
+       4) Right-Left rotation
+          '''''''''''''''''''
+  
+   * The first two rotations are single rotations and the next two 
+     rotations are double rotations.
+   * To have an unbalanced tree, we at least need a tree of height 2.
+   * With this simple tree, let's understand them one by one.
+
+   
+       1) Left rotation :
+          ''''''''''''''''
+   * If a tree becomes unbalanced, when a node is inserted into the right
+     subtree of the right subtree, then we perform a single left rotation -
+       
+        ___ 2                   ___                  
+       ( A )                   ( A )  <--__              
+           \                       \       \
+            \                       \       | 
+             \                       \      |
+              \                       \     |  
+               \    1                  \    |                    
+                \____      ____|\      _\__       _____|\      0  ___
+                ( B  )    |____  ]    (( B ))    |_____  ]       ( B )
+                  \            |/         \            |/        /   \
+                   \                       \                    /     \
+                    \                       \                  /       \
+                     \                       \                /         \
+                    __\_ 0                  __\_      0  ____/          _\__  0
+                   (  C )                  ( C  )       ( A  )         (  C ) 
+  
+    Right unbalanced tree        Left Rotation               Balanced  
+    
+          
+   * In our example, node "A" has become unbalanced as a node is inserted  
+     in the right subtree of A's right subtree.   
+   * We perform the left rotation by making "A" the left-subtree of B.                      
+             2) Right rotation :
+                '''''''''''''''''
+    * AVL tree may become unbalanced, if a node is inserted in the
+      left subtree of the left subtree.
+    * The tree then needs a right rotation.
+      
+              2  ___                      ___         
+                ( C )              /"""">( C )         
+                  /               /        /             
+                 /               |        /                
+            1 __/     ____|\     |    ___/    ____|\   0  ___    
+             ( B )   |____  ]    |___((B))   |____  ]    ( B )     
+              /           |/           /          |/      /  \
+             /                        /                  /    \  
+            /                        /                  /      \           
+        0 _/_                    ___/               0 _/_      _\_ 0
+         ( A )                  ( A )                ( C )    ( C )
+    
+    Left unbalanced Tree        Right Rotation       Balanced Tree
+
+  
+   * As depicted, the unbalanced node becomes the right child of its left
+     child by performing a right rotation.
+   
+              3) Left-Right rotation :
+                 '''''''''''''''''''''''
+   * Double rotations are slightly complex version of already explained
+     versions of rotations.
+   * To understand them better, we should take note of each action
+     performed while rotation. 
+   * Let's first check how to perform Left-Right rotation.
+   * A left-right rotation is a combination of left rotation followed
+     by right rotation.  
+      
+ __________________________________________________________________________
+|   State	           |             Action                            |
+|``````````````````````````|```````````````````````````````````````````````|
+|__________________________|_______________________________________________|
+|                          | 
+|           2 ___          |* A node has been inserted into the right         
+|            ( C )         |  subtree of the left subtree.          
+|             /            |* This makes C an unbalanced node.                                   
+|            /             |* These scenarios cause AVL tree to perform                                   
+|           /              |  left-right rotation.                                          
+|      1  _/_              | 
+|        ( A )             |
+|          \               |
+|           \              |
+|            \__ 0         |
+|           ( B )          |
+|                          |
+|__________________________|________________________________________________
+|                          |    
+|             ___          |            
+|            ( C )         |             
+|             /            |* We first perform the left rotation on the                                    
+|            /             |  left subtree of "C".                                   
+|           /              |* This makes "A", the left subtree of "B".                                             
+|         _/_   <_         |   
+|      __((A))    )        |    
+|     /    \      |        |  
+|    /      \    /         |  
+|    V       \__/          |  
+|           ((B))          | 
+|                          |  
+|__________________________|________________________________________________
+|                          |   
+|           2 ___          |           
+|            ( C )         |             
+|             /            |* Node C is still unbalanced, however now,                                                   
+|            /             |  it is because of the left-subtree of the                                  
+|           /              |  left-subtree.                                            
+|      1  _/_              |  
+|        ( B )             | 
+|        /                 | 
+|       /                  | 
+| 0  __/_                  |
+|   ( A  )                 |
+|                          | 
+|__________________________|_________________________________________________
+|                          |   
+|             ___          |           
+|        --->( C )         |             
+|       /     /            |* We shall now right-rotate the tree, making                                    
+|       |    /             |  "B" the new root node of this subtree.                                    
+|       |   /              |* "C" now becomes the right subtree of its                                              
+|         _/_              |  own left subtree. 
+|        ((B))             | 
+|        /                 | 
+|       /                  | 
+|    __/_                  |
+|   ( A  )                 | 
+|                          |  
+|__________________________|________________________________________________
+|                          |   
+|       0 ___              |                     
+|        ( B )             |* The tree is now balanced.                         
+|         /  \             |       
+|        /    \            |      
+|       /      \           |                                        
+|   0 _/_       \___ 0     |  
+|    ( A )      ( C )      |        
+|                          |  
+|__________________________|________________________________________________
+
+
+
+       4) Right-Left rotation :
+          '''''''''''''''''''''''
+   * The second type of double rotation is Right-Left Rotation.
+   * It is a combination of right rotation followed by left rotation.
+
+ __________________________________________________________________________
+|   State	           |             Action                            |
+|``````````````````````````|```````````````````````````````````````````````|
+|__________________________|_______________________________________________|
+|                          |  
+|         ___ 2            |        
+|        ( A )             |         
+|         \                |* A node has been inserted into the left                                
+|          \               |  subtree of the right subtree.                               
+|           \              |* This makes A, an unbalanced node with                                         
+|            \___ 1        |  balance factor 2.      
+|            ( C )         |     
+|            /             | 
+|           /              | 
+|          /__ 0           |
+|         ( B )            | 
+|                          | 
+|__________________________|______________________________________________
+|                          |
+|         ___              |         
+|        ( A )             |         
+|         \                |* First, we perform the right rotation along                               
+|          \               |  "C" node, making "C" the right subtree                                
+|           \              |  of its own left subtree "B".                                        
+|            \___          |* Now, B becomes the right subtree of "A".       
+|     -->    ((C))____     |         
+|    /       /        \    |  
+|   /       /          V   | 
+|   \      /__             | 
+|    \____((B))            |
+|                          |  
+|__________________________|________________________________________________
+|                          |    
+|             ___ 2        |             
+|            ( A )         |              
+|             \            |* Node A is still unbalanced because of the                                      
+|              \           |  right subtree of its right subtree and                                        
+|               \          |  requires a left rotation.                                               
+|                \__ 1     |           
+|               ( B )      |         
+|                 \        |   
+|                  \       |    
+|                   \__ 0  |               
+|                  ( C )   |        
+|                          | 
+|__________________________|_________________________________________________
+|                          | 
+|                          |    
+|             ___  <___    |              
+|            ( A )     \   |* A left rotation is performed by making "B"                
+|             \         \  |  the new root node of the subtree.                                     
+|              \        /  |* "A" becomes the left subtree of its right                                           
+|               \      /   |  subtree "B".                                                 
+|                \__       |          
+|               ((B))      |         
+|                 \        |   
+|                  \       |    
+|                   \__    |              
+|                  ( C )   |                        
+|__________________________|_________________________________________________
+|                          |   
+|       0 ___              |                     
+|        ( B )             |* The tree is now balanced.                        
+|         /  \             |       
+|        /    \            |      
+|       /      \           |                                        
+|   0 _/_       \___ 0     |  
+|    ( A )      ( C )      |        
+|                          |  
+|__________________________________________________________________________
+__________________________________________________
+                                                  |
+        DSA - AVL Tree                            |                  
+__________________________________________________|
+            |
+            |
+1) What's the Heading ?
+-----------------------
+* DSA - AVL Tree
+                                                                                        
+2) Definition of AVL Tree ?
+---------------------------
+*
+ 
+3) What is AVL Tree About ?
+---------------------------
+*
+*
+
+4) What does AVL Tree Do ?
+--------------------------
+*
+*
+
+5) Advantages/Benefits of AVL Tree :
+------------------------------------
+*
+*
+*
+
+6) Disadvantages/Drawback of AVL Tree :
+---------------------------------------
+*
+*
+*  
+
+7) Examples of AVL Tree :
+-------------------------
+*
+*
+_______________________________________________________________________________
+
+ 5. <<<<<<<<< DSA - Spanning Tree >>>>>>>>>
+  
+   * A spanning tree is a subset of Graph G, which has all the 
+     vertices covered with minimum possible number of edges. 
+   * Hence, a spanning tree does not have cycles and it cannot
+     be disconnected.
+   
+  ** By this definition, we can draw a conclusion that every connected
+     and undirected Graph G has at least one spanning tree.
+   * A disconnected graph does not have any spanning tree, as it
+     cannot be spanned to all its vertices.
+
+                       ___
+                      ( A )                                
+                       / \                    
+                      /   \                  
+             Graph G /     \                
+                    /       \                    
+                   /         \                                    
+                 _/_         _\_         
+                ( C )-------( B )
+      
+      
+           ______________ Spanning Trees ________________
+          |                       |                      |
+          |                       |                      |
+          V                       V                      V
+                               
+        ( A )                   ( A )                  ( A )             
+         /                       / \                    /
+        /                       /   \                  /
+       /                       /     \                / 
+      /                       /       \              /
+     /                       /         \            /               
+   _/_           ___       _/_         _\_        _/_
+  ( C )---------( B )     ( C )       ( B )      ( C )---------( B ) 
+ 
+    * We found three spanning trees off one complete graph.
+    * A complete undirected graph can have maximum nn-2 number of spanning
+      trees, where n is the number of nodes.       ```` 
+                  ```                       
+    * In the above addressed example, n is 3, hence 33−2 = 3 spanning
+      trees are possible.             ``````        `````````
+
+      ** General Properties of Spanning Tree :
+         ===================================
+   * We now understand that one graph can have more than one spanning 
+     tree.
+   * Following are a few properties of the spanning tree connected  
+     to graph G −
+            
+       (1) A connected graph G can have more than one spanning tree.
+       (2) All possible spanning trees of graph G, have the same
+           number of edges and vertices.
+       (3) The spanning tree does not have any cycle (loops).
+       (4) Removing one edge from the spanning tree will make the 
+           graph disconnected, i.e. the spanning tree is "minimally
+           connected".                                    `````````
+           `````````
+       (5) Adding one edge to the spanning tree will create a circuit or
+           loop, i.e. the spanning tree is "maximally acyclic".
+                                            ``````````````````
+          
+        ** Mathematical Properties of Spanning Tree :
+           ==========================================
+       (1) Spanning tree has n-1 edges, where n is the number of
+           nodes (vertices).
+       (2) From a complete graph, by removing maximum e - n + 1
+           edges, we can construct a spanning tree.   ``````````
+       (3) A complete graph can have maximum nn-2 number of
+           spanning trees.                   `````
+      
+     * Thus, we can conclude that spanning trees are a subset
+       of connected Graph G and disconnected graphs do not have         
+       spanning tree.
+      
+       ** Application of Spanning Tree :
+          ============================
+  * Spanning tree is basically used to find a minimum path to connect
+    all nodes in a graph.
+  * Common application of spanning trees are −
+   
+      a) Civil Network Planning :
+         '''''''''''''''''''''''''
+      b) Computer Network Routing Protocol :
+         ''''''''''''''''''''''''''''''''''''
+      c) Cluster Analysis :
+         '''''''''''''''''''
+   * Let us understand this through a small example.
+   * Consider, city network as a huge graph and now plans to deploy
+     telephone lines in such a way that in minimum lines we can connect
+     to all city nodes.
+   * This is where the spanning tree comes into picture.
+    
+      ** Minimum Spanning Tree (MST) :
+         ===========================
+   * In a weighted graph, a minimum spanning tree is a spanning tree
+     that has minimum weight than all other spanning trees of the
+     same graph.
+   * In real-world situations, this weight can be measured as distance, 
+     congestion, traffic load or any arbitrary value denoted to the edges.
+       
+       ** Minimum Spanning-Tree Algorithm :
+          ==================================
+   * We shall learn about two most important spanning tree algorithms -
+                          '''''''''''''''''''''''''''''''''''''''''''
+      a) Kruskal's Algorithm -
+         '''''''''''''''''''
+      b) Prim's Algorithm -
+         ''''''''''''''''
+      
+   a) Kruskal's Spanning Tree Algorithm -
+      ''''''''''''''''''''''''''''''''''''
+   + Kruskal's algorithm to find the minimum cost spanning tree uses the
+     greedy approach.
+   + This algorithm treats the graph as a forest and every node it
+     has as an individual tree.
+   + A tree connects to another only and only if, it has the least 
+     cost among all available options and does not violate MST 
+     properties. 
+    
+   + To understand Kruskal's algorithm let us consider the following
+     example -
+ 
+      
+     (*) Step 1 - Remove all loops and Parallel Edges -
+         ============================================
+         Remove all loops and parallel edges from the given graph.
+       
+    - In case of parallel edges, keep the one which has the least cost
+      associated and remove all others.
+      
+     (*) Step 2 - Arrange all edges in their increasing order of weight -
+         ==============================================================
+      
+     (*) Step 3 - Add the edge which has the least weightage -
+         =================================================== 
+__________________________________________________
+                                                  |
+        DSA - Spanning Tree                       |                  
+__________________________________________________|
+            |
+            |
+1) What's the Heading ?
+-----------------------
+* DSA - Spanning Tree
+                                                                                        
+2) Definition of Spanning Tree ?
+--------------------------------
+*
+ 
+3) What is Spanning Tree About ?
+--------------------------------
+*
+*
+
+4) What does Spanning Tree Do ?
+-------------------------------
+*
+*
+
+5) Advantages/Benefits of Spanning Tree :
+-----------------------------------------
+*
+*
+*
+
+6) Disadvantages/Drawback of Spanning Tree :
+--------------------------------------------
+*
+*
+*  
+
+7) Examples of Spanning Tree :
+------------------------------
+*
+*
+_______________________________________________________________________________
+
+ 6. <<<<<<<<< DSA - Heap >>>>>>>>>
+   
+    * Heap is a special case of balanced binary tree data structure 
+      where the root-node key is compared with its children and
+      arranged accordingly.
+    * If α has child node β then −
+        ```              ```   
+     ________________________
+    |
+    |  key(α) ≥ key(β)
+    |________________________  
+   
+    * As the value of parent is greater than that of child, this property
+      generates "Max Heap".
+                 ````````
+    * Based on this criteria, a heap can be of two types −
+      _________________________________________________
+     |
+     |  For Input → 35 33 42 10 14 19 27 44 26 31 
+     \_________________________________________________
+
+   * Min-Heap − 
+     ````````
+     + Where the value of the root node is less than or equal to
+       either of its children.
+            
+                                  _____                            
+                                /( 10  )\                        
+                               /         \                        
+                              /           \                          
+                             /             \                         
+                            /               \                         
+                           /                 \                       
+                       ___/                   \____                  
+                      ( 14 )                  ( 19 )                    
+                       /  \                    /  \
+                      /    \                  /    \
+                     /      \                /      \
+                    /        \              /        \      
+                   /          \            /          \                        
+                 _/__         _\__       _/__         _\__   
+                ( 26 )       ( 31 )     ( 42 )       ( 27 )
+                /   \          /
+               /     \        /
+             _/__    _\__   _/__
+            ( 44 )  ( 35 ) ( 33 )
+     
+    * Max-Heap −
+      ````````
+      + Where the value of the root node is greater than or equal to 
+        either of its children.
+           
+                                  _____                            
+                                /( 44  )\                        
+                               /         \                        
+                              /           \                          
+                             /             \                         
+                            /               \                         
+                           /                 \                       
+                       ___/                   \____                  
+                      ( 42 )                  ( 35 )                    
+                       /  \                    /  \
+                      /    \                  /    \
+                     /      \                /      \
+                    /        \              /        \      
+                   /          \            /          \                        
+                 _/__         _\__       _/__         _\__   
+                ( 33 )       ( 31 )     ( 19 )       ( 27 )
+                /   \          /
+               /     \        /
+             _/__    _\__   _/__
+            ( 10 )  ( 26 ) ( 14 )
+ 
+   * Both trees are constructed using the same input and order of arrival.
+      
+
+
+     ** Max Heap Construction Algorithm :
+        ===============================
+   * We shall use the same example to demonstrate how a Max Heap
+     is created. 
+   * The procedure to create Min Heap is similar but we go for min 
+     values instead of max values.
+   
+   * We are going to derive an algorithm for max heap by inserting one
+     element at a time.
+   * At any point of time, heap must maintain its property. 
+   * While insertion, we also assume that we are inserting a node
+     in an already heapified tree.
+    __________________________________________________________________
+   |
+   |  Step 1 − Create a new node at the end of heap.
+   |  Step 2 − Assign new value to the node.
+   |  Step 3 − Compare the value of this child node with its parent.
+   |  Step 4 − If value of parent is less than child, then swap them.
+   |  Step 5 − Repeat step 3 & 4 until Heap property holds.
+   |__________________________________________________________________
+  
+   * Note − In Min Heap construction algorithm, we expect the value of
+     the parent node to be less than that of the child node.
+  
+    * Let's understand Max Heap construction by an animated illustration.
+    * We consider the same input sample that we used earlier -
+     ________________________________________________________
+    |
+ 1. |   Input   |   35  33  42  10  14  19  27  44  26  31 
+    |________________________________________________________  
+    
+     ________________________________________________________
+    |
+ 2. |   Input   |   "35"  33  42  10  14  19  27  44  26  31 
+    |________________________________________________________  
+   
+                                  _____                            
+                                 (//35/) 
+     ________________________________________________________
+    |
+ 3. |   Input   |   35  "33"  42  10  14  19  27  44  26  31 
+    |________________________________________________________ 
+              
+                                  _____                       
+                                /(/35//)                        
+                               /                                 
+                              /                                     
+                             /                                      
+                            /                                        
+                           /                                         
+                       ___/                                     
+                      (/33/)                  
+     ________________________________________________________
+    |
+ 4. |   Input   |   35  33  "42"  10  14  19  27  44  26  31 
+    |________________________________________________________ 
+   
+                                  _____                            
+                                /(*35**)\                        
+                               /         \                         
+                              /           \                          
+                             /             \ >                         
+                            /               \``                         
+                           /                 \                       
+                       ___/                   \____                  
+                      ( 33 )                  (*42*)
+
+                    
+                                  _____                            
+                                /(/42//)\                        
+                               /         \                         
+                              /           \                          
+                             /             \                          
+                            /               \                         
+                           /                 \                       
+                       ___/                   \____                  
+                      ( 33 )                  (/35/)
+    
+     ________________________________________________________
+    |
+ 5. |   Input   |   35  33  42  "10"  14  19  27  44  26  31 
+    |________________________________________________________ 
+     
+                                  _____                            
+                                /( 42  )\                        
+                               /         \                        
+                              /           \                          
+                             /             \                         
+                            /               \                         
+                           /                 \                       
+                       ___/                   \____                  
+                      ( 33 )                  ( 35 )                    
+                       /                      
+                      /                      
+                     /                      
+                    /                            
+                   /                                             
+                 _/__                  
+                ( 10 )            
+     ________________________________________________________
+    |
+ 6. |   Input   |   35  33  42  10  "14"  19  27  44  26  31 
+    |________________________________________________________ 
+
+                                  _____                            
+                                /( 42  )\                        
+                               /         \                        
+                              /           \                          
+                             /             \                         
+                            /               \                         
+                           /                 \                       
+                       ___/                   \____                  
+                      (/33/)                  ( 35 )                    
+                       /  \                    
+                      /    \                  
+                     /      \ >                
+                    /        \``                    
+                   /          \                                    
+                 _/__         _\__         
+                ( 10 )       (/14/)   
+
+                 
+                                  _____                            
+                                /( 42  )\                        
+                               /         \                        
+                              /           \                          
+                             /             \                         
+                            /               \                         
+                           /                 \                       
+                       ___/                   \____                  
+                      (/14/)                  ( 35 )                    
+                       /  \                    
+                      /    \                  
+                     /      \ >                
+                    /        \``                    
+                   /          \                                    
+                 _/__         _\__         
+                ( 10 )       (/33/)  
+     ________________________________________________________
+    |
+ 7. |   Input   |   35  33  42  10  14  "19"  27  44  26  31 
+    |________________________________________________________ 
+    
+                                  _____                            
+                                /( 42  )\                        
+                               /         \                        
+                              /           \                          
+                             /             \                         
+                            /               \                         
+                           /                 \                       
+                       ___/                   \____                  
+                      ( 33 )                  (/35/)                    
+                       /  \                    /  
+                      /    \                  /    
+                     /      \                /      
+                    /        \              /              
+                   /          \            /                                  
+                 _/__         _\__       _/__            
+                ( 10 )       ( 14 )     (/19/)       
+
+     ________________________________________________________
+    |
+ 8. |   Input   |   35  33  42  10  14  19  "27"  44  26  31 
+    |________________________________________________________
+
+                                  _____                            
+                                /( 44  )\                        
+                               /         \                        
+                              /           \                          
+                             /             \                         
+                            /               \                         
+                           /                 \                       
+                       ___/                   \____                  
+                      ( 42 )                  ( 35 )                    
+                       /  \                    /  \
+                      /    \                  /    \
+                     /      \                /      \
+                    /        \              /        \      
+                   /          \            /          \                        
+                 _/__         _\__       _/__         _\__   
+                ( 33 )       ( 31 )     ( 19 )       ( 27 )
+    
+     ________________________________________________________
+    |
+ 9. |   Input   |   35  33  42  10  14  19  27  "44"  26  31 
+    |________________________________________________________ 
+                       
+                                  _____                            
+                                /( 44  )\                        
+                               /         \                        
+                              /           \                          
+                             /             \                         
+                            /               \                         
+                           /                 \                       
+                       ___/                   \____                  
+                      ( 42 )                  ( 35 )                    
+                       /  \                    /  \
+                      /    \                  /    \
+                     /      \                /      \
+                    /        \              /        \      
+                   /          \            /          \                        
+                 _/__         _\__       _/__         _\__   
+                ( 33 )       ( 31 )     ( 19 )       ( 27 )
+                /
+               /
+              /
+            _/__
+           ( 10 )
+     ________________________________________________________
+    |
+10. |   Input   |   35  33  42  10  14  19  27  44  "26"  31 
+    |________________________________________________________ 
+ 
+                                  _____                            
+                                /( 44  )\                        
+                               /         \                        
+                              /           \                          
+                             /             \                         
+                            /               \                         
+                           /                 \                       
+                       ___/                   \____                  
+                      ( 42 )                  (/35/)                    
+                       /  \                    /  \
+                      /    \                  /    \
+                     /      \                /      \
+                    /        \              /        \      
+                   /          \            /          \                        
+                 _/__         _\__       _/__         _\__   
+                ( 33 )       ( 31 )     ( 19 )       (/27/)
+                /  \
+               /    \
+              /      \
+            _/__    __\_
+           ( 10 )  ( 26 )   
+     ________________________________________________________
+    |
+11. |   Input   |   35  33  42  10  14  19  27  44  26  "31" 
+    |________________________________________________________  
+
+                                  _____                            
+                                /( 44  )\                        
+                               /         \                        
+                              /           \                          
+                             /             \                         
+                            /               \                         
+                           /                 \                       
+                       ___/                   \____                  
+                      ( 42 )                  ( 35 )                    
+                       /  \                    /  \
+                      /    \                  /    \
+                     /      \                /      \
+                    /        \              /        \      
+                   /          \            /          \                        
+                 _/__         _\__       _/__         _\__   
+                ( 33 )       ( 31 )     ( 19 )       ( 27 )
+                /  \            /
+               /    \          /
+              /      \        /
+            _/__    __\_    _/__
+           ( 10 )  ( 26 )  ( 14 )  
+
+         
+                                  _____                            
+                                /(     )\                        
+                               /    ^    \                        
+                              /     `     \                          
+                             /      `      \                         
+                            /       `       \                         
+                           /        `        \                       
+                       ___/         `         \____                  
+                      ( 42 )        `         ( 35 )                    
+                       /  \         `          /  \
+                      /    \        `         /    \
+                     /      \       `        /      \
+                    /        \      `       /        \      
+                   /          \     `      /          \                        
+                 _/__         _\__  `    _/__         _\__   
+                ( 33 )       ( 31 ) `   ( 19 )       ( 27 )
+                /  \            /  / 
+               /    \          /  /
+              /      \        /  /
+            _/__    __\_    _/__/
+           ( 10 )  ( 26 )  ( 14 )
+
+
+                                  _____                            
+                                /(  14 )\                        
+                               /         \                        
+                              /           \                          
+                             /             \                         
+                            /               \                         
+                           /                 \                       
+                       ___/                   \____                  
+                      ( 42 )                  ( 35 )                    
+                       /  \                    /  \
+                      /    \                  /    \
+                     /      \                /      \
+                    /        \              /        \      
+                   /          \            /          \                        
+                 _/__         _\__       _/__         _\__   
+                ( 33 )       ( 31 )     ( 19 )       ( 27 )
+                /  \             
+               /    \          
+              /      \        
+            _/__    __\_    
+           ( 10 )  ( 26 )  
+
+
+     ** Max Heap Deletion Algorithm :
+        =========================== 
+   * Let us derive an algorithm to delete from max heap.
+   * Deletion in Max (or Min) Heap always happens at the root   
+     to remove the Maximum (or minimum) value.  
+    ____________________________________________________________________
+   |
+   |  Step 1 − Remove root node.
+   |  Step 2 − Move the last element of last level to root.
+   |  Step 3 − Compare the value of this child node with its parent.
+   |  Step 4 − If value of parent is less than child, then swap them.
+   |  Step 5 − Repeat step 3 & 4 until Heap property holds.
+   |____________________________________________________________________  
+__________________________________________________
+                                                  |
+        DSA - Heap                                |                  
+__________________________________________________|
+            |
+            |
+1) What's the Heading ?
+-----------------------
+* DSA - Heap
+                                                                                        
+2) Definition of Heap ?
+-----------------------
+*
+ 
+3) What is Heap About ?
+-----------------------
+*
+*
+
+4) What does Heap Do ?
+----------------------
+*
+*
+
+5) Advantages/Benefits of Heap :
+--------------------------------
+*
+*
+*
+
+6) Disadvantages/Drawback of Heap :
+-----------------------------------
+*
+*
+*  
+
+7) Examples of Heap :
+---------------------
+*
+*
+_______________________________________________________________________________
+ 
+       *** Recursion ***
+           =========
+             1. DSA - Recursion Basics
+             2. DSA - Tower of Hanoi
+             3. DSA - Fibonacci Series
+  
+         <<<<<<<<< *** Recursion *** >>>>>>>>>
+                       =========
+__________________________________________________
+                                                  |
+              Recursion                           |                  
+__________________________________________________|
+            |
+            |
+1) What's the Heading ?
+-----------------------
+* Recursion
+                                                                                        
+2) Definition of Recursion ?
+----------------------------
+*
+ 
+3) What is Recursion About ?
+----------------------------
+*
+*
+
+4) What does Recursion Do ?
+---------------------------
+*
+*
+
+5) Advantages/Benefits of Recursion :
+-------------------------------------
+*
+*
+*
+
+6) Disadvantages/Drawback of Recursion :
+----------------------------------------
+*
+*
+*  
+
+7) Examples of Recursion :
+--------------------------
+*
+*
+_______________________________________________________________________________
+
+ 1. <<<<<<<<< DSA - Recursion Basics >>>>>>>>>
+ 
+    * Some computer programming languages allow a module or 
+      function to call itself.
+    * This technique is known as recursion.
+    * In recursion, a function α either calls itself directly or 
+      calls a function β that in turn calls the original function α.
+                      ```                                        ```
+    * The function α is called recursive function.
+                  ``` 
+    * Example − a function calling itself -
+      ```````
+    __________________________________________
+   |
+   |  int function(int value) {
+   |     if(value < 1)
+   |        return;
+   |     function(value - 1);
+   |
+   |     printf("%d ",value);   
+   |  } 
+   |___________________________________________
+     
+    * Example − a function that calls another function which in turn
+      ```````   call it again -
+    ___________________________________________
+   |
+   |  int function1(int value1) {
+   |     if(value1 < 1)
+   |   return;
+   |     function2(value1 - 1);
+   |     printf("%d ",value1);   
+   |  }
+   |  int function2(int value2) {
+   |     function1(value2);
+   |  }
+   |___________________________________________
+        
+      ** Properties -
+         ==========
+    + A recursive function can go infinite like a loop.
+    + To avoid infinite running of recursive function, there are two
+      properties that a recursive function must have −
+      
+     * Base criteria − 
+       '''''''''''''
+   + There must be at least one base criteria or condition, such that, 
+     when this condition is met the function stops calling itself
+     recursively.
+    
+     * Progressive approach −
+       ''''''''''''''''''''
+   + The recursive calls should progress in such a way that each time
+     a recursive call is made it comes closer to the base criteria.
+__________________________________________________
+                                                  |
+        DSA - Recursion Basics                    |                  
+__________________________________________________|
+            |
+            |
+1) What's the Heading ?
+-----------------------
+* DSA - Recursion Basics
+                                                                                        
+2) Definition of Recursion Basics ?
+-----------------------------------
+*
+ 
+3) What is Recursion Basics About ?
+-----------------------------------
+*
+*
+
+4) What does Recursion Basics Do ?
+----------------------------------
+*
+*
+
+5) Advantages/Benefits of Recursion Basics :
+--------------------------------------------
+*
+*
+*
+
+6) Disadvantages/Drawback of Recursion Basics :
+-----------------------------------------------
+*
+*
+*  
+
+7) Examples of Recursion Basics :
+---------------------------------
+*
+*
+_______________________________________________________________________________
+
+ 2. <<<<<<<<< DSA - Tower of Hanoi >>>>>>>>>
+__________________________________________________
+                                                  |
+        DSA - Tower of Hanoi                      |                  
+__________________________________________________|
+            |
+            |
+1) What's the Heading ?
+-----------------------
+* DSA - Tower of Hanoi
+                                                                                        
+2) Definition of Tower of Hanoi ?
+---------------------------------
+*
+ 
+3) What is Tower of Hanoi About ?
+---------------------------------
+*
+*
+
+4) What does Tower of Hanoi Do ?
+--------------------------------
+*
+*
+
+5) Advantages/Benefits of Tower of Hanoi :
+------------------------------------------
+*
+*
+*
+
+6) Disadvantages/Drawback of Tower of Hanoi :
+---------------------------------------------
+*
+*
+*  
+
+7) Examples of Tower of Hanoi :
+-------------------------------
+*
+*
+_______________________________________________________________________________
+
+ 3. <<<<<<<<< DSA - Fibonacci Series >>>>>>>>>
+__________________________________________________
+                                                  |
+         DSA - Fibonacci Series                   |                  
+__________________________________________________|
+            |
+            |
+1) What's the Heading ?
+-----------------------
+* DSA - Fibonacci Series
+                                                                                        
+2) Definition of Fibonacci Series ?
+-----------------------------------
+*
+ 
+3) What is Fibonacci Series About ?
+-----------------------------------
+*
+*
+
+4) What does Fibonacci Series Do ?
+----------------------------------
+*
+*
+
+5) Advantages/Benefits of Fibonacci Series ?
+--------------------------------------------
+*
+*
+*                                                                                                                                                                                                                                                                                                                                         
